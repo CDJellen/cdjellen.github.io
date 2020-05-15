@@ -2815,7 +2815,7 @@ input, select, textarea {
 /* Main */
 /* The navigation bar */
 .navbar {
-  overflow: hidden;
+  overflow: visible;
   background-color: #333;
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
@@ -2830,9 +2830,6 @@ input, select, textarea {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  position: absolute;  /* <-- added declarations */
-  left: 0; top: 100%;  /*     here               */
-  width: 100%;         /*     and here...        */
 }
 
 /* Change background on mouse-over */
