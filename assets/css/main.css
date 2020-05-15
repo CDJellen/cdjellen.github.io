@@ -2154,7 +2154,7 @@ input, select, textarea {
 		margin-right: -2em;
 		opacity: 0;
 		width: 1em;
-		z-index: -1;
+		z-index: 990;
 	}
 
 		input[type="checkbox"] + label,
@@ -2818,8 +2818,8 @@ input, select, textarea {
   overflow: visible;
   background-color: #333;
   /*position: fixed;  Set the navbar to fixed position */
-  position:relative;
-  z-index:1000; //change your number as per elements lies on your page.
+  position:fixed;
+  z-index:1000; 
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
 }
