@@ -3363,13 +3363,13 @@ input, select, textarea {
 		/* One */
 
 			#one {
-				text-align: left;
+				text-align: center;
 			}
 
 		/* Two */
 
 			#two {
-				text-align: left;
+				text-align: center;
 			}
 
 	}
