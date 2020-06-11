@@ -13172,14 +13172,14 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Visualization-of-SPY-options-dollar-volume-and-RNN-prediction-of-volatility-from-daily-options-data">Visualization of SPY options dollar volume and RNN prediction of volatility from daily options data<a class="anchor-link" href="file:///C:/Users/chris/Downloads/VIXmodel.html#Visualization-of-SPY-options-dollar-volume-and-RNN-prediction-of-volatility-from-daily-options-data">¶</a></h1>
+<h1 id="Visualization-of-SPY-options-dollar-volume-and-RNN-prediction-of-volatility-from-daily-options-data">Visualization of SPY Options Dollar Volume and RNN Prediction of Volatility from Daily Options Data.<a class="anchor-link" href="file:///C:/Users/chris/Downloads/VIXmodel.html#Visualization-of-SPY-options-dollar-volume-and-RNN-prediction-of-volatility-from-daily-options-data">¶</a></h1>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Understanding and predicting future market volatility is essential for protecting against unforseen downside, and in accurately pricing hedges.  For the S&amp;P 500, the index of America's largest publicaly tradesd companies, expected future volatuility is measured by the VIX.  The VIX is an index maintained by the Chicago Board of Option Exchange, with the index price determined by current put and call option price.  The VIX measures the expected 30 day future market volatility.  When the VIX is high, S&amp;P put and call options are more expensive.  Additionally, On Febuary 19th 2020, the VIX was at 14.38, reflecting a prediction of moderate volatility in the S&amp;P 500 over the next 30 days.  On the same day, the S&amp;P 500 index was trading at 3386.  30 days later, the S&amp;P 500 was training at 2304, a loss of 32%.  This significant price drop was not in line with the Febuary 19th VIX level.  However, 15 days later the VIX had more than doubled to just under 40.  At this level, the S&amp;P 500 real 30 day volatility was more in line with the volatility expectation provided by the VIX.  With these considerations in mind, this project seeks to predict the 15 day future VIX price using a time series of past and present SPY (the largest and most liquid ETF tracking the S&amp;P 500) options volume.</p>
+<p>Understanding and predicting future market volatility is essential for protecting against unforeseen downside, and in accurately pricing hedges.  For the S&amp;P 500, the index of America's largest publicly traded companies, expected future volatility is measured by the VIX.  The VIX is an index maintained by the Chicago Board of Option Exchange, with the index price determined by current put and call option price.  The VIX measures the expected 30 day future market volatility.  When the VIX is high, S&amp;P put and call options are more expensive.  Additionally, On February 19th 2020, the VIX was at 14.38, reflecting a prediction of moderate volatility in the S&amp;P 500 over the next 30 days.  On the same day, the S&amp;P 500 index was trading at 3386.  30 days later, the S&amp;P 500 was training at 2304, a loss of 32%.  This significant price drop was not in line with the February 19th VIX level.  However, 15 days later the VIX had more than doubled to just under 40.  At this level, the S&amp;P 500 real 30 day volatility was more in line with the volatility expectation provided by the VIX.  With these considerations in mind, this project seeks to predict the 15 day future VIX price using a time series of past and present SPY (the largest and most liquid ETF tracking the S&amp;P 500) options volume.</p>
 
 </div>
 </div>
@@ -13187,7 +13187,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Data-Compilaiton">Data Compilaiton<a class="anchor-link" href="file:///C:/Users/chris/Downloads/VIXmodel.html#Data-Compilaiton">¶</a></h2>
+<h2 id="Data-Compilaiton">Data Compilation<a class="anchor-link" href="file:///C:/Users/chris/Downloads/VIXmodel.html#Data-Compilaiton">¶</a></h2>
 </div>
 </div>
 </div>
@@ -13195,7 +13195,7 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Daily options trading data, including volume, option type, expiration, strike, and underlying price from a large SQL database was queried for the SPY ETF between 2015 and 2019.  For each trading day, the option type (put or call option), days to expiration, strike price, and dollar volume were compiled.  The dollar volume was obtained by multiplying the adjusted last trade price by the daily options volume.  Another approach to computing dollar volume would be to compute the change in open interest for each day, and then multiply by the last trade price.  The daily options volume was used instead of change in open interest as some intitial modeling suggested this metric could better caputre changes in volatility.  The first goal of the project was to develop a time series visualization of the daily dollar-volume of put and call options.  This could potentially help incorporate some domain knowledge to the modeling problem.  When far out of the money put and call options are purchased with few days to expiration, market participants are expecting the underlying SPY ETF to be more volatile.  The dollar volume of put and call options traded with these characteristics is used to compute the present VIX, but may be more important in predicitng the 15 day future VIX.</p>
-<p>A sumamry of the data contained in the SQL database is presented below, theis project focuses on the volume, strike price, option type, and difference between the strike and underlying price (called the "moneyness" of an option contract).</p>
+<p>A summary of the data contained in the SQL database is presented below, this project focuses on the volume, strike price, option type, and difference between the strike and underlying price (called the "moneyness" of an option contract).</p>
 
 </div>
 </div>
@@ -13250,7 +13250,7 @@ memory usage: 612.5+ MB
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>In the database above, the symbol id for SPY is 508, we will focus on SPY options data between 2015 and 2018 when vizualizing the daily dollar volumes.</p>
+<p>In the database above, the symbol id for SPY is 508, we will focus on SPY options data between 2015 and 2018 when visualizing the daily dollar volumes.</p>
 
 </div>
 </div>
@@ -13262,8 +13262,8 @@ memory usage: 612.5+ MB
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>In addition to seeing the shape and data types of the options data stored in the SQL database, we can see the colum headings and typical values for each column.  The colum called "data_date" lists the date for the data in each row.  The open interest, implied volatility, and last price reflect the values at the end of the trading day for "data_date".  For the table below, we can walk through option pricing for the contract in the 1st row.</p>
-<p>The symbol_id of 508 indicates that the contract in this row uses the SPY ETF as the underlying asset.  The data is listed for November 28th, 2014.  The contract in the first row  is a call option with a stike price of 193.5.  This represents the right to buy the underlying SPY for 193.5.  The contact was last traded for 14.43, as the underlying SPY price was 207.2 at close.  The contract was thus "in the money" as the SPY was trading higher than the call strike price.  The option price reflected a relatively low predicted future volatility, and the VIX traded around 13 at close that day.  The "put_call" column value of 1 indicates that the contract in this row is a call option.  Additionally, the volume of 1 indidates that 1 call with this strike and expiry was traded on November 28th, 2014.</p>
+<p>In addition to seeing the shape and data types of the options data stored in the SQL database, we can see the column headings and typical values for each column.  The column called "data_date" lists the date for the data in each row.  The open interest, implied volatility, and last price reflect the values at the end of the trading day for "data_date".  For the table below, we can walk through option pricing for the contract in the 1st row.</p>
+<p>The symbol_id of 508 indicates that the contract in this row uses the SPY ETF as the underlying asset.  The data is listed for November 28th, 2014.  The contract in the first row  is a call option with a strike price of 193.5.  This represents the right to buy the underlying SPY for 193.5.  The contact was last traded for 14.43, as the underlying SPY price was 207.2 at close.  The contract was thus "in the money" as the SPY was trading higher than the call strike price.  The option price reflected a relatively low predicted future volatility, and the VIX traded around 13 at close that day.  The "put_call" column value of 1 indicates that the contract in this row is a call option.  Additionally, the volume of 1 indicates that 1 call with this strike and expiry was traded on November 28th, 2014.</p>
 
 </div>
 </div>
@@ -13498,7 +13498,7 @@ memory usage: 612.5+ MB
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We next move to computing the daily dollar volume.  Intially, dollar volume was to be negative for put options and positive to call options.  This was later modified to caputre option type by listing the days to expitration for puts as negative.</p>
+<p>We next move to computing the daily dollar volume.  Initially, dollar volume was to be negative for put options and positive to call options.  This was later modified to capture option type by listing the days to expiration for puts as negative.</p>
 
 </div>
 </div>
@@ -13510,7 +13510,7 @@ memory usage: 612.5+ MB
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>After adding the desired columns to the Data Frame, a dictionary of daily data frames was developed to caputre the desired metrics for each trading day between 2015 and 2019.  This dictionary was useful in delimiting the data for each day.  Each data frame contains the dollar volume of SPY options with various strike prices and expiries, with the value in each cell representing the daily dolar-volume.</p>
+<p>After adding the desired columns to the Data Frame, a dictionary of daily data frames was developed to capture the desired metrics for each trading day between 2015 and 2019.  This dictionary was useful in delimiting the data for each day.  Each data frame contains the dollar volume of SPY options with various strike prices and expiries, with the value in each cell representing the daily dollar-volume.</p>
 
 </div>
 </div>
@@ -13526,7 +13526,7 @@ memory usage: 612.5+ MB
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>For consistant visualization, the range of possible days to expiration and strike prices for SPY contracts for the date range considered was computed.  The range of strike prices gave the limits of the x-axis, while the days to expiration for put and call options gave the limits of the y-axis.  A call contract was stored as having a positive number of days to expiration, while a put was stored as having negative days to expiration for visualization purposes.</p>
+<p>For consistent visualization, the range of possible days to expiration and strike prices for SPY contracts for the date range considered was computed.  The range of strike prices gave the limits of the x-axis, while the days to expiration for put and call options gave the limits of the y-axis.  A call contract was stored as having a positive number of days to expiration, while a put was stored as having negative days to expiration for visualization purposes.</p>
 
 </div>
 </div>
@@ -13553,7 +13553,7 @@ memory usage: 612.5+ MB
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Next, we move to plot the time series of daily options dollar volume using heatmaps.  The data is organized to display the days to expiration for an option contract on the ordinate axis, with negtive indicating a put option.  The days to expiration were calculated relative to the date frame.  The underlying SPY strike price for the contact was lsited on the abscissa.  As an example, an SPY call that was far out of the money would appear in the top left corner of the heat map if it was far from expiry.  The color of each tile in the heat map indicates the dollar volume.  High dollar volume contracts appear in darker blue than contracts with low dollar volume.  Each trading day between January 2015 and January 2019 was plotted in this manner.</p>
+<p>Next, we move to plot the time series of daily options dollar volume using heatmaps.  The data is organized to display the days to expiration for an option contract on the ordinate axis, with negative indicating a put option.  The days to expiration were calculated relative to the date frame.  The underlying SPY strike price for the contact was listed on the abscissa.  As an example, an SPY call that was far out of the money would appear in the top left corner of the heat map if it was far from expiry.  The color of each tile in the heat map indicates the dollar volume.  High dollar volume contracts appear in darker blue than contracts with low dollar volume.  Each trading day between January 2015 and January 2019 was plotted in this manner.</p>
 
 </div>
 </div>
@@ -26155,14 +26155,14 @@ OC40Ni4xMDE=
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="15-day-future-VIX-prediction-using-an-RNN-trained-on-dollar-volume-data">15 day future VIX prediction using an RNN trained on dollar volume data<a class="anchor-link" href="file:///C:/Users/chris/Downloads/VIXmodel.html#15-day-future-VIX-prediction-using-an-RNN-trained-on-dollar-volume-data">¶</a></h2>
+<h2 id="15-day-future-VIX-prediction-using-an-RNN-trained-on-dollar-volume-data">15 day Future VIX Prediction Using an RNN Trained on Dollar Volume Data.<a class="anchor-link" href="file:///C:/Users/chris/Downloads/VIXmodel.html#15-day-future-VIX-prediction-using-an-RNN-trained-on-dollar-volume-data">¶</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>In addition to the options dollar volume data explored in the preceeding sections, dollar-adjusted daily SPY and VIX data from 2015 to 2019 was obtained.  The model developed below was used to predict the VIX, a measure of market volatility, 15 days in the future.  Predicting future VIX pricing can help protect against unexpected drops or spikes in volatility, which have an effect on option pricing.  The time series of strike price, option type, and days to expiration was used to train a recursive neural network for VIX prediction, although predicing SPY or VIX price for another future date was also possible.</p>
+<p>In addition to the options dollar volume data explored in the preceding sections, dollar-adjusted daily SPY and VIX data from 2015 to 2019 was obtained.  The model developed below was used to predict the VIX, a measure of market volatility, 15 days in the future.  Predicting future VIX pricing can help protect against unexpected drops or spikes in volatility, which have an effect on option pricing.  The time series of strike price, option type, and days to expiration was used to train a recursive neural network for VIX prediction, although predicting SPY or VIX price for another future date was also possible.</p>
 
 </div>
 </div>
@@ -26174,7 +26174,7 @@ OC40Ni4xMDE=
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The project used TensorFlow with Keras to build, train, and test the RNN model.  A time series consisting of dollar volumes for all SPY put and call options contracts traded each day was developed and converted into tensor form.  The batch size for training was set to 50 for the initial investigation.  The first 800 observations of the time series were used as an initialization window.  This allowed the model to incorporate both past and present option dollar volume when prediciting the future VIX.  The following initial investigation sought to predict the 1 day future VIX using only a time series of past VIX observations.  The literature suggests that this should be possible, although possibly with high prediction error.  Before prediction, the VIX was normalized to lie between -1 and 1.</p>
+<p>The project used TensorFlow with Keras to build, train, and test the RNN model.  A time series consisting of dollar volumes for all SPY put and call options contracts traded each day was developed and converted into tensor form.  The batch size for training was set to 50 for the initial investigation.  The first 800 observations of the time series were used as an initialization window.  This allowed the model to incorporate both past and present option dollar volume when predicting the future VIX level.  The following initial investigation sought to predict the 1 day future VIX using only a time series of past VIX observations.  The literature suggests that this should be possible, although possibly with high prediction error.  Before prediction, the VIX was normalized to lie between -1 and 1.</p>
 
 </div>
 </div>
@@ -26276,9 +26276,9 @@ Epoch 10/10
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>This investigation demonstrated the potential applicability of the RNN model in predicitng future VIX prices.  The figures above used only the time serieis of past VIX prices to predict the 1 day future VIX price.  A more robust model would predic tthe VIX further in the future, and make use of relevant data in generating this prediction.</p>
+<p>This investigation demonstrated the potential applicability of the RNN model in predicting future VIX prices.  The figures above used only the time series of past VIX prices to predict the 1 day future VIX price.  A more robust model would predict the VIX further in the future, and make use of relevant data in generating this prediction.</p>
 <p>Again using TensorFlow with Keras, the 15 day future VIX will be predicted using both the time series of SPY options dollar volume, as well as the time series of past VIX prices.  The batch size used for training was 512, with a sequence length of 256.  This time, the first 100 observations were used to initialize the model, so the prediction accuracy for these observations is expected to be lower than accuracy for the overall model.</p>
-<p>The training and test data were also normlaized in a manner similar to the VIX normalization.  Before generating the prediction, the scale was reset to the origional range of VIX observations.  The standard mean square error (MSE) loss function was selected for this problem.  Rather than attempting to classify the 15 day future VIX into catagories, the model sought to generate a numerical prediciton.  Current literature suggests that RNNs are well suited to this type of regression problem.</p>
+<p>The training and test data were also normalized in a manner similar to the VIX normalization.  Before generating the prediction, the scale was reset to the original range of VIX observations.  The standard mean square error (MSE) loss function was selected for this problem.  Rather than attempting to classify the 15 day future VIX into categories, the model sought to generate a numerical prediction.  Current literature suggests that RNNs are well suited to this type of regression problem.</p>
 
 </div>
 </div>
@@ -26290,7 +26290,7 @@ Epoch 10/10
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We now have a full 2D Data Frame of the dollar volume data, and can move to building and training a recusrive neural netwek using TensorFlow.</p>
+<p>We now have a full 2D Data Frame of the dollar volume data, and can move to building and training a recursive neural network using TensorFlow.</p>
 
 </div>
 </div>
@@ -26302,7 +26302,7 @@ Epoch 10/10
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We can define new functions to generate training batches, and for computing or chaning our desired error metric.  In this case, the desired error metric was the mean square error.</p>
+<p>We can define new functions to generate training batches, and for computing or changing our desired error metric.  In this case, the desired error metric was the mean square error.</p>
 
 </div>
 </div>
@@ -26314,7 +26314,7 @@ Epoch 10/10
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>First, we develop the training batches, setting the batch size to 512 and the sequenece length to 256.  This allows us to incoproate a long time series of trading days for training, and allow helps prevent overfitting.</p>
+<p>First, we develop the training batches, setting the batch size to 512 and the sequence length to 256.  This allows us to incorporate a long time series of trading days for training, and allow helps prevent over-fitting.</p>
 
 </div>
 </div>
@@ -26326,7 +26326,7 @@ Epoch 10/10
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>After developing the batches, we can move on to building the RNN model.  The model consists of 512 gated reccurent units in parallel, followed by a sigmoid activation function.  In order to capture VIX closing prices outside of the training range, a linear activation function could also added to predict the final VIX closing price 15 days in the future.  This was an important addition, as both the X and Y values used in training the network were normalized to be between 0 and 1, but the VIX could close above its maximal training close in practice.  The VIX in this date range never closed above 50, however in March of 2020 the VIX traded above 85 intra-day.</p>
+<p>After developing the batches, we can move on to building the RNN model.  The model consists of 512 gated recurrent units in parallel, followed by a sigmoid activation function.  In order to capture VIX closing prices outside of the training range, a linear activation function could also added to predict the final VIX closing price 15 days in the future.  This was an important addition, as both the X and Y values used in training the network were normalized to be between 0 and 1, but the VIX could close above its maximal training close in practice.  The VIX in this date range never closed above 50, however in March of 2020 the VIX traded above 85 intra-day.</p>
 
 </div>
 </div>
@@ -26404,14 +26404,6 @@ loss (test-set): 0.04700328782200813
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Finally, we can define a new plotting function to visualize the model prediciton accuracy</p>
-
-</div>
-</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 
