@@ -1,6 +1,7 @@
 {
-	"name": "web-dev",
-	"version": "0.0.1",
+	"name": "cdjellen.github.io",
+	"author": "Chris Jellen",
+	"version": "0.2.1",
 	"private": true,
 	"scripts": {
 		"dev": "vite dev",
