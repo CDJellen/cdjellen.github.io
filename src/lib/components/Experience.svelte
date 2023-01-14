@@ -12,8 +12,8 @@
     bg-gray-800 items-center gap-20 px-5 sm:px-5 overflow-hidden
 	grid grid-flow-row-dense grid-cols-7 grid-rows-2"
 >
-	<div class="col-span-2" >
-		<a href={link}><img src={image} alt="Experience" /></a>
+	<div class="col-span-2 row-span-1 grid justify-items-top justify-items-end" >
+		<span class="pull-right"><a href={link}><img src={image} alt="Experience" /></a></span>
 	</div>
 	<div class="col-span-5 row-span-2 text-gray-50 text-md" >
 		<h3 class="text-left text-gray-50 text-outline-sm text-lg font-bold text-6xl" >{name}</h3>

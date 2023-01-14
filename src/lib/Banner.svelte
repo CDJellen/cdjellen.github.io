@@ -17,6 +17,6 @@
     </div>
     <div class="flex flex-col items-center gap-1 sm:gap-1" >
         <h1 class="text-center text-gray-50 text-outline-lg font-bold text-3xl sm:text-6xl" >Chris Jellen</h1>
-        <h5 class="text-center text-gray-50 text-outline text-md sm:text-xl" >Software Engineer | Product Manager</h5>
+        <h5 class="text-center text-gray-50 text-outline text-md sm:text-xl" >Software Engineering - M365 Big Data</h5>
     </div>
 </div>
