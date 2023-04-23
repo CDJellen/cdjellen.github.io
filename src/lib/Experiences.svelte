@@ -22,7 +22,7 @@
 			notes={[
 				"Built and deployed containerized APIs to accelerate and empower data scientists and reliability engineers.",
 				"Developed forecasting models for service demand to inform strategic planning and resource allocation.",
-				"Working across component teams to establish a unified data solution for short and long term health and demand forecasting.",
+				"Architected monitoring and observability improvements to capture cross-service health and availability.",
 			]}
 		/>
 	</div>
@@ -36,7 +36,7 @@
 			notes={[
 				"Developed AI/ML-informed analytic prototypes for quality assurance at scale.",
 				"Designed and built a RESTful API, integrating with existing data pipelines, which enabled repeatable, scalable analysis.",
-				"Lead Agile SCRUM meetings, wrote and tracked tickets, and executed on rapid, customer-centric design.",
+				"Led Agile SCRUM meetings, wrote and tracked tickets, and executed on rapid, customer-centric design.",
 				"Built and evaluated custom CNN models for over-the-air radio signal processing and classification.",
 			]}
 		/>
@@ -49,7 +49,7 @@
 			description="Product Lead | Engineering Manager"
             descriptionLong="CALDERA is an open-source framework for automated adversary emulation.  It offers a powerful combination of atomic abilities, automated attack planning, and stealth-focused C2 capabilities to make cyber risk analysis accessible.  CALDERA is used both by the open source community and a range of Government, DoD, IC, and university sponsors.  Building experience as a leader helped me to understand the importance of effective management in successful product development.  In planning the future of CALDERA, I learned effective product management in the context of competing customer interests and priorities."
 			notes={[
-				"Product lead for CALDERA's cyber ontological mapping capability, interfaced with a range of DoD sponsors to ensure wide interoperability and wider use of CALDERA as a cyber analytic tool.",
+				"Product lead for CALDERA's cyber ontological mapping capability, interfaced with a range of DoD sponsors to ensure wide interoperability and wider use of CALDERA as a cyber analytics tool.",
 				"Led a team of four (3 engineers, 1 data scientist) to develop novel offensive cyber planning capabilities and data management solutions.",
 				"Built closed-source AI-ML enabled cyber posture analysis capabilities deployed on AWS.",
 				"Developed a strong understanding of agile project management and continuous delivery for a range of end-users and sponsors.",

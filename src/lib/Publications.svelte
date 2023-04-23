@@ -23,7 +23,7 @@
 			In addition, the relative importance findings suggest that the air-water temperature difference, temporal hour weight, and time of year, as measured through seasonality, have strong associations with Cn2 and could be included to improve model prediction accuracy."
 			linkIcon=""
 			link="https://doi.org/10.1364/AO.397325"
-			linkText="Published in Applied Opics"
+			linkText="Published in Applied Optics"
 		/>
 		<Publication
 			title="Measurement and analysis of atmospheric optical turbulence in a near-maritime environment."

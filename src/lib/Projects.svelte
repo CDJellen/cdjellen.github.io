@@ -18,7 +18,7 @@
 			image={NdbcApi}
 			name="National Data Buoy Center API"
 			description="A Python API for querying oceanographic and atmospheric data from the National Data Buoy Center.
-			The ndbc-api makes climate research data more accessible by parsing whitespace-delimited .
+			The ndbc-api makes climate research data more accessible by parsing whitespace-delimited data files.
 			Measurements are typically distributed as utf-8 encoded, station-by-station, fixed-period text files.
 			More information on the measurements and methodology are available on the NDBC website."
 			badges={[
