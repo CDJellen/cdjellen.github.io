@@ -1,6 +1,7 @@
 <script>
     import Project from './components/Project.svelte';
 	import NdbcApi from './assets/ndbc-api-readme.png';
+	import ExploreGithub from './assets/egh-large.png'
 	import TridentProj from './assets/trident-project-03.jpg';
 	import CapstoneProj from './assets/capstone-project-01.png';
 
@@ -12,6 +13,25 @@
     grid lg:grid-cols-1 xs:grid-cols-1">
 	<div class="items-center">
 		<h3 class="text-center text-gray-50 text-outline-lg text-3xl sm:text-6xl">Projects</h3>
+	</div>
+	<div class="flex flex-col rounded-2xl">
+		<Project
+			image={ExploreGithub}
+			name="Explore GitHub | Graph-based search of GiHub projects and contributors"
+			description="A containerized application for traversing GitHub's implicit graph of contributors and repositories. Built using gRPC, redis cache, and GraphQL to make GitHub more accessible, engaging, and social."
+			badges={[
+				"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg",
+				"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/svelte/svelte-original.svg",
+				"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain-wordmark.svg",
+
+			]}
+			linkIcon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-plain.svg"
+			link="https://www.explore-github.com"
+			linkText="Explore GitHub"
+			githunIcon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+			github="https://github.com/cdjellen/discover"
+			githubText="GitHub Repository"
+		/>
 	</div>
 	<div class="flex flex-col rounded-2xl">
 		<Project
