@@ -17,11 +17,12 @@
 			image={MicrosoftLogo}
             link="https://www.microsoft.com/en-us/microsoft-365/government/"
 			name="Microsoft"
-			description="Software Engineering | Big Data Team | M365 Cloud"
-            descriptionLong="As a member of the Big Data Team, I contribute to observability, reliability, and demand forecasting for core M365 services deployed in the cloud.  I work with Reliability Engineers, Software Development Engineers, and Product Managers to build a shared understanding of service readiness with business and engineering applications."
+			description="Software Engineer II | Microsoft Defender Infrastructure"
+            descriptionLong="As a member of the infrastructure team, I develop, deploy, and maintain the shared services which support the Microsoft Defender ecosystem."
 			notes={[
-				"Built and deployed containerized APIs to accelerate and empower data scientists and reliability engineers.",
-				"Developed forecasting models for service demand to inform strategic planning and resource allocation.",
+				"Optimized service telemetry flow to make log data and traces available more quickly and at higher fidelity to reliability and operations teams.",
+				"Built and deployed containerized APIs to accelerate and empower data scientists.",
+				"Developed forecasting models for cloud storage and compute capacity demand to aid in long-term strategic planning.",
 				"Architected monitoring and observability improvements to capture cross-service health and availability.",
 			]}
 		/>

@@ -23,7 +23,37 @@
 			In addition, the relative importance findings suggest that the air-water temperature difference, temporal hour weight, and time of year, as measured through seasonality, have strong associations with Cn2 and could be included to improve model prediction accuracy."
 			linkIcon=""
 			link="https://doi.org/10.1364/AO.397325"
-			linkText="Published in Applied Optics"
+			linkText="Published in Applied Optics."
+		/>
+		<Publication
+			title="Hybrid models for Optical Turbulence."
+			notes="Applied Optics 62 (18), 4880-4890"
+			abstract="Accurate prediction of atmospheric optical turbulence in localized environments is essential for
+			estimating the performance of free-space optical systems. Macro-meteorological models developed
+			to predict turbulent effects in one environment may fail when applied in new environments. However,
+			existing macro-meteorological models are expected to offer some predictive power. Building a new
+			model from locally-measured macro-meteorology and scintillometer readings can require significant
+			time and resources, as well as a large number of observations. These challenges motivate the
+			development of a machine-learning informed hybrid model framework. By combining some baseline
+			macro-meteorological model with local observations, hybrid models were trained to improve upon the
+			predictive power of each baseline model. Comparisons between the performance of the hybrid models,
+			the selected baseline macro-meteorological models, and machine-learning models trained only on
+			local observations highlight potential use cases for the hybrid model framework when local data is
+			expensive to collect. Both the hybrid and data-only models were trained using the Gradient Boosted
+			Decision Tree (GBDT) architecture with a variable number of in-situ meteorological observations.
+			The hybrid and data-only models were found to outperform three baseline macro-meteorological
+			models, even for low numbers of observations, in some cases as little as one day. For the first baseline
+			macro-meteorological model investigated, the hybrid model achieves an estimated 29% reduction in
+			mean absolute error (MAE) using only one days-equivalent of observation, growing to 41% after only
+			two days, and 68% after 180 days-equivalent training data. The data-only model generally showed
+			similar but slightly lower performance as compared to the hybrid model. Notably, the hybrid model's
+			performance advantage over the data-only model dropped below 2% near the 24 days-equivalent
+			observation mark and trended towards 0% thereafter. The number of days-equivalent training data
+			required by both the hybrid model and the data-only model is potentially indicative of the seasonal
+			variation in the local microclimate and its propagation environment."
+			linkIcon=""
+			link="https://doi.org/10.1088/2633-1357/abba45"
+			linkText="Published as a prepirn tin arXiv 2310.17829 and in Applied Optics."
 		/>
 		<Publication
 			title="Measurement and analysis of atmospheric optical turbulence in a near-maritime environment."
@@ -32,10 +62,10 @@
 			describes the disruption of a propagating electromagnetic beam passing through an inhomogeneously
 			heated turbulent environment. In order to improve predictive models, it is critical to develop a deeper
 			understanding of the relationships between environmental parameters and optical turbulence. To that
-			end, an overwater, 890 m scintillometer link was established along the Chesapeake Bay adjacent to the
+			end, an over water, 890 m scintillometer link was established along the Chesapeake Bay adjacent to the
 			Severn River in Annapolis, Maryland. Specifically, Cn2 data from the scintillometer, as well, as
 			numerous meteorological parameters were collected over the period of approximately 15 months to
-			characterize a scintillometer link in the near-maritime environment. The characteristics of this nearmaritime link were distinct from those observed in prior over-land and open ocean links. Further,
+			characterize a scintillometer link in the near-maritime environment. The characteristics of this near-maritime link were distinct from those observed in prior over-land and open ocean links. Further,
 			existing macro-meteorological models for predicting Cn2 from environmental parameters developed
 			for open-ocean links were shown to perform poorly in the near-maritime environment. While the
 			offshore adapted macro-meteorological model demonstrated lower prediction error, this study
@@ -44,7 +74,7 @@
 			first to extend beyond one year, is available."
 			linkIcon=""
 			link="https://doi.org/10.1088/2633-1357/abba45"
-			linkText="Published in IOP SciNotes"
+			linkText="Published in IOP SciNotes."
 		/>
 		<Publication
 			title="Machine-learning informed macro-meteorological models for the near-maritime environment."
@@ -60,7 +90,7 @@
 			Further tuning and machine-learning architectural changes could further improve model performance."
 			linkIcon=""
 			link="https://doi.org/10.1364/AO.416680"
-			linkText="Published in Applied Optics"
+			linkText="Published in Applied Optics."
 		/>
 	</div>
 </div>
