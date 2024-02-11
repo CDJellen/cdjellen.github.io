@@ -11,19 +11,25 @@
 	</div>
 	<div class="grid grid-cols-1 gap-4">
 		<Publication
-			title="Machine learning informed predictor importance measures of environmental parameters in maritime optical turbulence."
+			title="Effective Benchmarks for Optical Turbulence Modeling."
 			notes="Appl. Opt. 59, 6379-6389 (2020)"
-			abstract="Prediction of the index of refraction structure constant Cn2 in the low-altitude maritime environment is challenging. 
-			To improve predictive models, deeper understanding of the relationships between environmental parameters and optical turbulence is required. 
-			To that end, a robust data set of Cn2 as well as numerous meteorological parameters were collected over a period of approximately 15 months along the Chesapeake Bay adjacent to the Severn River in Annapolis, Maryland. 
-			The goal was to derive new insights into the physical relationships affecting optical turbulence in the near-maritime environment. 
-			Using data-driven machine learning feature selection approaches, the relative importance of 12 distinct, measurable environmental parameters was analyzed and evaluated. 
-			Random forest nodal purity analysis was the primary machine learning approach to relative importance determination. 
-			The relative feature importance results indicated that air temperature and pressure were important parameters in predicting Cn2 in the maritime environment. 
-			In addition, the relative importance findings suggest that the air-water temperature difference, temporal hour weight, and time of year, as measured through seasonality, have strong associations with Cn2 and could be included to improve model prediction accuracy."
+			abstract="Optical turbulence presents a significant challenge for communication, directed energy, and 
+			imaging systems, especially in the atmospheric boundary layer. Effective modeling of optical turbulence 
+			strength is critical for the development and deployment of these systems. The lack of standard evaluation 
+			tools, especially long-term data sets, modeling tasks, metrics, and baseline models, prevent effective 
+			comparisons between approaches and models. This reduces the ease of reproducing results and contributes 
+			to over-fitting on local micro-climates. Performance characterized using evaluation metrics provides 
+			some insight into the applicability of a model for predicting the strength of optical turbulence. 
+			However, these metrics are not sufficient for understanding the relative quality of a model. We introduce 
+			the otbench package, a Python package for rigorous development and evaluation of optical turbulence 
+			strength prediction models. The package provides a consistent interface for evaluating optical turbulence 
+			models on a variety of benchmark tasks and data sets. The otbench package includes a range of 
+			baseline models, including statistical, data-driven, and deep learning models, to provide a sense of 
+			relative model quality. otbench also provides support for adding new data sets, tasks, and evaluation 
+			metrics. The package is available at github.com/cdjellen/otbench."
 			linkIcon=""
-			link="https://doi.org/10.1364/AO.397325"
-			linkText="Published in Applied Optics."
+			link="https://arxiv.org/abs/2401.03573"
+			linkText="Pre-print available on ArXiv."
 		/>
 		<Publication
 			title="Hybrid models for Optical Turbulence."
@@ -54,6 +60,21 @@
 			linkIcon=""
 			link="https://doi.org/10.1088/2633-1357/abba45"
 			linkText="Published as a prepirn tin arXiv 2310.17829 and in Applied Optics."
+		/>
+		<Publication
+			title="Machine learning informed predictor importance measures of environmental parameters in maritime optical turbulence."
+			notes="Appl. Opt. 59, 6379-6389 (2020)"
+			abstract="Prediction of the index of refraction structure constant Cn2 in the low-altitude maritime environment is challenging. 
+			To improve predictive models, deeper understanding of the relationships between environmental parameters and optical turbulence is required. 
+			To that end, a robust data set of Cn2 as well as numerous meteorological parameters were collected over a period of approximately 15 months along the Chesapeake Bay adjacent to the Severn River in Annapolis, Maryland. 
+			The goal was to derive new insights into the physical relationships affecting optical turbulence in the near-maritime environment. 
+			Using data-driven machine learning feature selection approaches, the relative importance of 12 distinct, measurable environmental parameters was analyzed and evaluated. 
+			Random forest nodal purity analysis was the primary machine learning approach to relative importance determination. 
+			The relative feature importance results indicated that air temperature and pressure were important parameters in predicting Cn2 in the maritime environment. 
+			In addition, the relative importance findings suggest that the air-water temperature difference, temporal hour weight, and time of year, as measured through seasonality, have strong associations with Cn2 and could be included to improve model prediction accuracy."
+			linkIcon=""
+			link="https://doi.org/10.1364/AO.397325"
+			linkText="Published in Applied Optics."
 		/>
 		<Publication
 			title="Measurement and analysis of atmospheric optical turbulence in a near-maritime environment."

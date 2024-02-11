@@ -17,10 +17,11 @@
 			image={MicrosoftLogo}
             link="https://www.microsoft.com/en-us/microsoft-365/government/"
 			name="Microsoft"
-			description="Software Engineer II | Microsoft Defender Infrastructure"
-            descriptionLong="As a member of the infrastructure team, I develop, deploy, and maintain the shared services which support the Microsoft Defender ecosystem."
+			description="Software Engineer II | Microsoft"
+            descriptionLong="As a member of the developer platform team, I designed, built and accelerated shared release and observability tooling for the Microsoft Defender ecosystem."
 			notes={[
-				"Optimized service telemetry flow to make log data and traces available more quickly and at higher fidelity to reliability and operations teams.",
+				"Scaled and optimized k8s clusters to to increase microservice reliability.",
+				"Automated configuration and release validation across multiple dedicated cloud environments.",
 				"Built and deployed containerized APIs to accelerate and empower data scientists.",
 				"Developed forecasting models for cloud storage and compute capacity demand to aid in long-term strategic planning.",
 				"Architected monitoring and observability improvements to capture cross-service health and availability.",
