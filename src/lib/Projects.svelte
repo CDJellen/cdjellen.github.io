@@ -104,7 +104,7 @@
 
 .projects-container {
 	width: 90%;
-	max-width: 1800px;
+	max-width: 1200px;
 	margin: 0 auto;
 	align-items: center;
   display: flex;

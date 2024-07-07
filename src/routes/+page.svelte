@@ -14,8 +14,12 @@
 <div id="navbar"></div>
 <Navbar />
 <Banner />
+<div id="experiences"></div>
 <Experiences />
+<div id="projects"></div>
 <Projects />
+<div id="publications"></div>
 <Publications />
+<div id="resume"></div>
 <Resume />
 <Footer />

@@ -1,5 +1,16 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
+	
 	import Button from "./Button.svelte";
+  
+	let screenWidth = 0;
+
+  onMount(() => {
+    screenWidth = window.innerWidth;
+    window.addEventListener('resize', () => {
+      screenWidth = window.innerWidth;
+    });
+  });
 
 	export let title: string;
 	export let linkIcon: string;
@@ -13,13 +24,14 @@
 	<div class="text-container">
 		<h3 class="publication-title text-outline-sm">{title}</h3>
 		<br />
-		<p class="publication-abstract text-pub-sm">{abstract}</p>
-
-		<div class="link-container">
-			{#if link}
+		{#if screenWidth > 768}
+			<p class="publication-abstract text-pub">{abstract}</p>
+		{/if}
+		{#if link}
+			<div class="link-container">
 				<Button icon={linkIcon} link={link} text={linkText} />
-			{/if}
-		</div>
+			</div>
+		{/if}
 
 		<p class="publication-notes">{notes}</p>
 	</div>
