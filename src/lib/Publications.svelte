@@ -2,14 +2,11 @@
     import Publication from './components/Publication.svelte';
 </script>
 
- <!-- Publications -->
-<div class="
-    bg-gray-800 items-center gap-20 px-10 sm:px-20 overflow-hidden
-    grid lg:grid-cols-1 xs:grid-cols-1">
-	<div class="items-center">
-		<h3 class="text-center text-gray-50 text-outline-lg text-3xl sm:text-6xl">Publications</h3>
-	</div>
-	<div class="grid grid-cols-1 gap-4">
+<div class="publications-section">
+	<h3 class="section-title text-outline-lg">Publications</h3>
+
+	<div class="publications-container">
+
 		<Publication
 			title="Effective Benchmarks for Optical Turbulence Modeling."
 			notes="Appl. Opt. 59, 6379-6389 (2020)"
@@ -31,6 +28,7 @@
 			link="https://arxiv.org/abs/2401.03573"
 			linkText="Pre-print available on ArXiv."
 		/>
+
 		<Publication
 			title="Hybrid models for Optical Turbulence."
 			notes="Applied Optics 62 (18), 4880-4890"
@@ -61,6 +59,7 @@
 			link="https://doi.org/10.1088/2633-1357/abba45"
 			linkText="Published as a prepirn tin arXiv 2310.17829 and in Applied Optics."
 		/>
+
 		<Publication
 			title="Machine learning informed predictor importance measures of environmental parameters in maritime optical turbulence."
 			notes="Appl. Opt. 59, 6379-6389 (2020)"
@@ -76,6 +75,7 @@
 			link="https://doi.org/10.1364/AO.397325"
 			linkText="Published in Applied Optics."
 		/>
+
 		<Publication
 			title="Measurement and analysis of atmospheric optical turbulence in a near-maritime environment."
 			notes="IOP SciNotes 1 (2020) 02400"
@@ -97,6 +97,7 @@
 			link="https://doi.org/10.1088/2633-1357/abba45"
 			linkText="Published in IOP SciNotes."
 		/>
+
 		<Publication
 			title="Machine-learning informed macro-meteorological models for the near-maritime environment."
 			notes="Appl. Opt. 60, 2938-2951 (2021)"
@@ -113,5 +114,30 @@
 			link="https://doi.org/10.1364/AO.416680"
 			linkText="Published in Applied Optics."
 		/>
+
 	</div>
 </div>
+
+<style>
+.publications-section {
+	background-color: #222;
+	color: white;
+	padding: 2rem 1rem;
+}
+
+.section-title {
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+/* Updated Container Styles */
+.publications-container {
+	width: 90%;
+	max-width: 1800px;
+	margin: 0 auto;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+</style>

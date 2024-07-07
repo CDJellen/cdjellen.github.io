@@ -1,14 +1,33 @@
 <script>
-    import Resume from './components/Resume.svelte';
+  import Resume from './components/Resume.svelte';
 </script>
 
- <!-- Publications -->
-<div class="
-    bg-gray-800 items-center gap-20 px-10 sm:px-20 overflow-hidden
-    grid lg:grid-cols-1 xs:grid-cols-1">
-	<div class="items-center">
-		<h3 class="text-center text-gray-50 text-outline-lg text-3xl sm:text-6xl">Resume</h3>
-        <br/>
-        <Resume />
-	</div>
+<div class="resume-section">
+  <h3 class="section-title text-outline-lg">Resume</h3>
+  <div class="resume-container">
+    <Resume />
+  </div>
 </div>
+
+<style>
+/* General Styles */
+.resume-section {
+  background-color: #222;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.section-title {
+  margin-bottom: 1rem;
+}
+
+.resume-container {
+  width: 90%;
+  max-width: 1800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+</style>

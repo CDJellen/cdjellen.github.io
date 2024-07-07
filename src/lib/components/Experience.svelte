@@ -7,41 +7,101 @@
 	export let notes: string[];
 </script>
 
-<div
-	class="
-    bg-gray-800 items-center gap-20 px-5 sm:px-5 overflow-hidden
-	grid grid-flow-row-dense grid-cols-7 grid-rows-2"
->
-	<div class="col-span-2 row-span-1 grid justify-items-top justify-items-end" >
-		<span class="pull-right"><a href={link}><img src={image} alt="Experience" /></a></span>
+<div class="experience-container rounded-2xl">
+	<div class="image-container">
+		<a href={link} target="_blank">
+			<img src={image} alt="Experience" class="experience-image" />
+		</a>
 	</div>
-	<div class="col-span-5 row-span-2 text-gray-50 text-md" >
-		<h3 class="text-left text-gray-50 text-outline-sm text-lg font-bold text-6xl" >{name}</h3>
-		<div class="text-gray-50 text-outline text-md sm:text-xl">
-			<h3 class="my-3 font-bold">{description}</h3>
-			<h5 class="my-3">{descriptionLong}</h5>
-			<div class="grid lg:flex lg:justify-left grid-cols-2 sm:grid-cols-3">
-				<table class="table-fixed">
-					<thead>
-						<tr>
-							<th class="px-1 py-2 text-left" >
-								<div class="">
-									<p style="font-size:30px">&#x1F680;</p>
-								</div>
-							</th>
-							<th class="text-left font-bold text-2xl" >Key Accomplishments:</th>
-					  </tr>
-					</thead>
-					<tbody>
-					{#each notes as note}
-						<tr>
-							<td><p style="font-size:20px">&#128204;</p></td>
-							<td>{note}</td>
-						</tr>
-					{/each}
-					</tbody>
-				</table>
-			</div>
+
+	<div class="experience-details">
+		<h3 class="experience-title text-outline-sm">{name}</h3>
+		<h4 class="experience-description text-outline">{description}</h4>
+		<p class="experience-description-long">{descriptionLong}</p>
+
+		<div class="accomplishments">
+			<h4 class="accomplishments-title text-outline">Key Accomplishments:</h4>
+			<ul>
+				{#each notes as note}
+					<li class="accomplishment-item">&#128204; {note}</li>
+				{/each}
+			</ul>
 		</div>
 	</div>
 </div>
+
+<style>
+	.experience-container {
+		background-color: #2f323f;
+		color: white;
+		padding: 1.5rem;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	.image-container {
+		width: 100%; 
+		max-width: 200px;
+		margin: 0 auto 1rem auto;
+	}
+
+	.experience-image {
+		width: 100%; 
+		height: auto;
+		object-fit: contain;
+		border-radius: 0.5rem;
+	}
+
+	.experience-details {
+		text-align: left;
+	}
+
+	.experience-title {
+		font-size: 1.25rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.experience-description {
+		font-size: 1rem;
+		font-weight: bold;
+		margin-bottom: 0.5rem;
+	}
+
+	.experience-description-long {
+		line-height: 1.5;
+		margin-bottom: 1rem;
+	}
+
+	.accomplishments-title {
+		font-size: 1.1rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.accomplishment-item {
+		list-style: none;
+		padding-left: 0;
+		margin-bottom: 0.5rem;
+	}
+
+	/* Media Query for Larger Screens */
+	@media (min-width: 768px) {
+		.experience-container {
+			flex-direction: row; 
+		}
+
+		.image-container {
+			margin-bottom: 0;
+			margin-right: 1.5rem;
+		}
+
+		.experience-image {
+			max-width: 300px;
+		}
+
+		.experience-title {
+			font-size: 1.5rem;
+		}
+	}
+</style>

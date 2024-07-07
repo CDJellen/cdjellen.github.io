@@ -9,39 +9,101 @@
 	export let linkIcon: string;
 	export let link: string;
 	export let linkText: string;
-	export let githunIcon: string;
+	export let githubIcon: string;
 	export let github: string;
 	export let githubText: string;
 </script>
 
-<div
-	class="
-    bg-gray-800 items-center gap-20 px-5 sm:px-5 overflow-hidden
-    grid lg:grid-cols-2 xs:grid-cols-1"
->
-	<a href={github}><img src={image} alt="Project" /></a>
-	<div class="flex justify-center items-center">
-		<div class="text-gray-50 text-outline text-md sm:text-xl">
-			<h3 class="text-left text-gray-50 text-outline-sm text-lg font-bold text-6xl" >{name}</h3>
-			<h4 class="my-3">{description}</h4>
-			<div class="grid lg:flex lg:justify-center grid-cols-2 sm:grid-cols-3">
-				{#each badges as badge}
-					<Badge logo={badge} />
-				{/each}
-			</div>
-			<br>
-			<div class="grid lg:flex lg:justify-center grid-cols-2 sm:grid-cols-3" >
-				<div class="flex justify-right px-5">
-					<Button icon={linkIcon} link={link} text={linkText} />
-				</div>
-				<div class="flex justify-left px-5">
-					<Button
-						icon={githunIcon}
-						link={github}
-						text={githubText}
-					/>
-				</div>
-			</div>
+<div class="project-container rounded-2xl">
+	<a href={github} target="_blank">
+		<img src={image} alt="Project" class="project-image" />
+	</a>
+
+	<div class="project-details">
+		<h3 class="project-title text-outline-sm">{name}</h3>
+		<h4 class="project-description">{description}</h4>
+			
+		<div class="badges-container">
+			{#each badges as badge}
+				<Badge logo={badge} />
+			{/each}
+		</div>
+		
+		<div class="buttons-container">
+			{#if link}
+				<Button icon={linkIcon} link={link} text={linkText} />
+			{/if}
+			{#if github}
+				<Button icon={githubIcon} link={github} text={githubText} />
+			{/if}
 		</div>
 	</div>
 </div>
+
+<style>
+	.project-container {
+		background-color: #2f323f;
+		color: white;
+		padding: 1.5rem;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	.image-container {
+		width: 100%;
+		max-width: 360px;
+		margin: 0 auto 1rem auto;
+	}
+
+	.project-image {
+		width: 100%;
+		height: auto;
+		border-radius: 0.5rem;
+		object-fit: cover;
+	}
+
+	.project-details {
+		text-align: left; 
+		padding-left: 1.5rem;
+	}
+
+	.project-title {
+		font-size: 1.25rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.project-description {
+		line-height: 1.5;
+	}
+
+	.badges-container {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+		justify-content: center;
+	}
+
+	.buttons-container {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+		justify-content: center;
+	}
+
+	/* Media Query for Larger Screens */
+	@media (min-width: 768px) { 
+		.project-container {
+			flex-direction: row;
+		}
+
+		.image-container {
+			margin-bottom: 0;
+		}
+
+		.project-details {
+			padding-left: 2rem;
+		}
+	}
+</style>

@@ -1,22 +1,83 @@
 <script>
-    import background from '$lib/assets/background01.jpg'
-    import profile from '$lib/assets/profile00.png'
+  import background from '$lib/assets/background01.jpg';
+  import profile from '$lib/assets/profile00.png';
 </script>
 
+<div
+  class="banner" 
+  style="background-image: url('{background}');"
+  id="banner"
+>
+  <div class="content-wrapper">
+    <img 
+      class="profile-image rounded-full border-4 border-solid border-gray-900"
+      src="{profile}" 
+      alt="profile"
+    >
 
-<!-- Banner -->
-<div class="
-    h-screen w-screen flex justify-center items-center
-    bg-pose bg-no-repeat bg-cover bg-center bg-blend-overlay bg-opacity-75 bg-fixed"
-    style="background-image: url('{background}');"
-    id="banner" >
-    <div class="flex flex-col items-center gap-1 sm:gap-3" >
-        <img class="object-cover w-[200px] h-[200px] rounded-full 
-        border-4 border-solid border-gray-900"  
-        src="{profile}" alt="profile" >
+    <div class="text-container">
+      <h1 class="name text-outline-lg font-bold">Chris Jellen</h1>
+      <h5 class="title text-outline">Software Engineer II - Microsoft</h5>
     </div>
-    <div class="flex flex-col items-center gap-1 sm:gap-1" >
-        <h1 class="text-center text-gray-50 text-outline-lg font-bold text-3xl sm:text-6xl" >Chris Jellen</h1>
-        <h5 class="text-center text-gray-50 text-outline text-md sm:text-xl" >Software Engineer II - Microsoft</h5>
-    </div>
+  </div>
 </div>
+
+<style>
+.banner {
+  min-height: 100vh; 
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.name {
+  font-size: 2rem;
+}
+
+.title {
+  font-size: 1rem;
+}
+
+/* Media Queries for Different Screen Sizes */
+@media (min-width: 640px) { 
+  .content-wrapper {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .profile-image {
+    width: 300px; 
+    height: 300px;
+  }
+
+  .name {
+    font-size: 3rem;
+  }
+}
+</style>
