@@ -14,7 +14,7 @@
       <button class="resume-download-button">Download Resume</button>
     </a>
   </div>
-  <iframe src={resume} title="Chris Jellen's Resume" class="resume-iframe"></iframe>
+  <iframe src={resume} title="Christopher Jellen's Resume" class="resume-iframe"></iframe>
 </div>
 
 <style>

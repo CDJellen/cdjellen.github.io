@@ -16,8 +16,8 @@
     >
 
     <div class="text-container">
-      <h1 class="name text-outline-lg font-bold">Chris Jellen</h1>
-      <h5 class="title text-outline">Software Engineer II - Microsoft</h5>
+      <h1 class="name text-outline-lg font-bold">Christopher Jellen</h1>
+      <h5 class="title text-outline">Machine Learning Research | Automation Engineering</h5>
     </div>
   </div>
 </div>

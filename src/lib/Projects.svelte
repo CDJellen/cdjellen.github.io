@@ -20,7 +20,7 @@
         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain-wordmark.svg",
       ]}
       linkIcon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-plain.svg"
-      link="https://www.explore-github.com"
+      link="https://explore-github.com"
       linkText="Explore GitHub"
       githubIcon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
       github="https://github.com/cdjellen/discover"

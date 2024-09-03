@@ -3,6 +3,7 @@
   import MicrosoftLogo from './assets/microsoft.png';
   import MitreLogo from './assets/mitre-attack-logo.png';
   import CalderaLogo from './assets/caldera-logo.png';
+  import WraithWatchLogo from './assets/wraithwatch-logo.png';
 </script>
 
 <div class="experiences-section">
@@ -10,17 +11,27 @@
 
   <div class="experiences-container">
     <Experience
+      image={WraithWatchLogo}
+      link="https://www.wraithwatch.com/"
+      name="Wraithwatch"
+      description="Security Engineering | Machine Learning Engineering"
+      descriptionLong="Wraithwatch is a cybersecurity startup building the next generation of AI/ML-informed cyber defense. As an early member of the team, I've had the opportunity to build the product, own customer relationships, and help drive strategic direction."
+      notes={[
+        "Lead the design and development of security automation workflows.",
+        "Managing the product roadmap through synthesis of partner feedback, engineering resources, and machine learning research.",
+      ]}
+    />
+    <Experience
       image={MicrosoftLogo}
       link="https://www.microsoft.com/en-us/microsoft-365/government/"
       name="Microsoft"
-      description="Software Engineer II | Microsoft"
+      description="Software Engineering | Engineering Operations"
       descriptionLong="As a member of the developer platform team, I designed, built and accelerated shared release and observability tooling for the Microsoft Defender ecosystem."
       notes={[
-        "Scaled and optimized k8s clusters to increase microservice reliability.",
-        "Automated configuration and release validation across multiple dedicated cloud environments.",
-        "Built and deployed containerized APIs to accelerate and empower data scientists.",
-        "Developed forecasting models for cloud storage and compute capacity demand to aid in long-term strategic planning.",
-        "Architected monitoring and observability improvements to capture cross-service health and availability.",
+        "Scaled and optimized k8s cluster topology and configuration to increase microservice reliability.",
+        "Decreased time-to-release across dedicated cloud environments by a factor of four through automated configuration and service validation.",
+        "Led development and evaluation of medium- and long-term forecasting models for cloud storage and compute demand to aid in long-term strategic planning.",
+        "Developed automated monitoring and observability pipelines to capture and report cross-service health and availability.",
       ]}
     />
     <Experience
@@ -30,10 +41,9 @@
       description="Software Engineering | Machine Learning Engineering"
       descriptionLong="In my time with MITRE, I've supported The Veteran's Benefits Administration, the United States Marine Corps, and Intelligence Community as an engineer and leader. I've learned first-hand the importance of building a strong understanding of customer needs, clear communication, and strategic planning. Leading the development of software prototypes allowed me to craft a product through the full development lifecycle, from roadmapping to ticketing to delivery and every step in between."
       notes={[
-        "Developed AI/ML-informed analytic prototypes for quality assurance at scale.",
-        "Designed and built a RESTful API, integrating with existing data pipelines, which enabled repeatable, scalable analysis.",
-        "Led Agile SCRUM meetings, wrote and tracked tickets, and executed on rapid, customer-centric design.",
-        "Built and evaluated custom CNN models for over-the-air radio signal processing and classification.",
+        "Developed prototype AI/ML-informed quality assurance tools for Public-sector Data Scientists which scale to hundreds of millions of transactions.",
+        "Doubled the frequency of cross-organization engagements through agile project management and customer-centric design.",
+        "Advised Public-sector institutions on the application of open-source AI/ML tools and models in signal processing and data analysis.",
       ]}
     />
     <Experience
@@ -46,7 +56,6 @@
         "Product lead for CALDERA's cyber ontological mapping capability, interfaced with a range of DoD sponsors to ensure wide interoperability and wider use of CALDERA as a cyber analytics tool.",
         "Led a team of four (3 engineers, 1 data scientist) to develop novel offensive cyber planning capabilities and data management solutions.",
         "Built closed-source AI-ML enabled cyber posture analysis capabilities deployed on AWS.",
-        "Developed a strong understanding of agile project management and continuous delivery for a range of end-users and sponsors.",
       ]}
     />
   </div>
