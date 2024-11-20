@@ -1,9 +1,9 @@
 <script>
   import Experience from './components/Experience.svelte';
-  import MicrosoftLogo from './assets/microsoft.png';
-  import MitreLogo from './assets/mitre-attack-logo.png';
-  import CalderaLogo from './assets/caldera-logo.png';
-  import WraithWatchLogo from './assets/wraithwatch-logo.png';
+  import MicrosoftLogo from './assets/images/microsoft.png';
+  import MitreLogo from './assets/images/mitre-attack-logo.png';
+  import CalderaLogo from './assets/images/caldera-logo.png';
+  import WraithWatchLogo from './assets/images/wraithwatch-logo.png';
 </script>
 
 <div class="experiences-section">

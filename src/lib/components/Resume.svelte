@@ -1,5 +1,5 @@
 <script lang="ts">
-	import resume from '$lib/assets/Jellen_Resume.pdf';
+	import resume from '$lib/assets/files/Jellen_Resume.pdf';
 	import { onMount } from 'svelte';
 	let resumeLink = "";
 

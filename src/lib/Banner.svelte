@@ -1,6 +1,6 @@
 <script>
   import background from '$lib/assets/background01.jpg';
-  import profile from '$lib/assets/profile00.png';
+  import profile from '$lib/assets/images/profile00.png';
 </script>
 
 <div

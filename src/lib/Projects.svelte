@@ -1,9 +1,9 @@
 <script>
 	import Project from './components/Project.svelte';
-	import NdbcApi from './assets/ndbc-api-readme.png';
-	import ExploreGithub from './assets/egh-large.png'
-	import TridentProj from './assets/trident-project-03.jpg';
-	import CapstoneProj from './assets/capstone-project-01.png';
+	import NdbcApi from './assets/images/ndbc-api-readme.png';
+	import ExploreGithub from './assets/images/egh-large.png'
+	import TridentProj from './assets/images/trident-project-03.jpg';
+	import CapstoneProj from './assets/images/capstone-project-01.png';
 </script>
 
 <div class="projects-section">
@@ -70,10 +70,10 @@
 	
 		<Project
 			image={CapstoneProj}
-			name="Capstone Design Competition"
+			name="National Association of Corrosion Engineers Design Competition"
 			description="Lead a team to design, integrate, and build a semi-autonomous corrosion detection robot for a national design competition.
 			The team was funded by the Office of Naval Research (ONR), and provided an excellent opportunity to plan and execute a long-term, product-focused development project.
-			Placed first in the 2019 University Students Applied Design and Solutions Competition, sponsored by the National Association of Corrosion Engineers (NACE)."
+			Placed first in the 2019 University Students Applied Design and Solutions Competition, sponsored by the National Association of Corrosion Engineers."
 			badges={[
 				"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matlab/matlab-original.svg",
 				"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg",

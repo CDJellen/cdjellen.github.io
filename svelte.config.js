@@ -11,7 +11,8 @@ const config = {
 		adapter: adapter({
 			pages: "web_dev",
 			assets: "web_dev",
-			fallback: null
+			fallback: null,
+			include: ["**/*.svelte", "**/posts/**/*", "**/images/**/*"]
 		})
 	}
 };

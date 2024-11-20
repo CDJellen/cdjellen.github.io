@@ -1,5 +1,5 @@
 <script>
-  import logo from '$lib/assets/logo.png';
+  import logo from '$lib/assets/images/logo.png';
   import { onMount } from 'svelte';
   import { slide } from 'svelte/transition';
 
