@@ -1,99 +1,96 @@
 {
-  "src/lib/assets/layered-waves-haikei.svg": {
-    "file": "_app/immutable/assets/layered-waves-haikei-b007de7b.svg",
-    "src": "src/lib/assets/layered-waves-haikei.svg"
-  },
-  "src/lib/assets/layered-waves-haikei-sm.svg": {
-    "file": "_app/immutable/assets/layered-waves-haikei-sm-dbfecfb0.svg",
-    "src": "src/lib/assets/layered-waves-haikei-sm.svg"
-  },
-  "src/lib/assets/logo.png": {
+  "src/lib/assets/images/logo.png": {
     "file": "_app/immutable/assets/logo-c9e87fa7.png",
-    "src": "src/lib/assets/logo.png"
+    "src": "src/lib/assets/images/logo.png"
   },
-  "src/lib/assets/mitre-attack-logo.png": {
-    "file": "_app/immutable/assets/mitre-attack-logo-3ae6a7bf.png",
-    "src": "src/lib/assets/mitre-attack-logo.png"
-  },
-  "src/lib/assets/caldera-logo.png": {
-    "file": "_app/immutable/assets/caldera-logo-ae81c5fa.png",
-    "src": "src/lib/assets/caldera-logo.png"
-  },
-  "src/lib/assets/wraithwatch-logo.png": {
-    "file": "_app/immutable/assets/wraithwatch-logo-f28c1daa.png",
-    "src": "src/lib/assets/wraithwatch-logo.png"
-  },
-  "src/lib/assets/ndbc-api-readme.png": {
-    "file": "_app/immutable/assets/ndbc-api-readme-25d2db54.png",
-    "src": "src/lib/assets/ndbc-api-readme.png"
-  },
-  "src/lib/assets/trident-project-03.jpg": {
-    "file": "_app/immutable/assets/trident-project-03-c59deb72.jpg",
-    "src": "src/lib/assets/trident-project-03.jpg"
-  },
-  "src/lib/assets/profile00.png": {
+  "src/lib/assets/images/profile00.png": {
     "file": "_app/immutable/assets/profile00-f9884011.png",
-    "src": "src/lib/assets/profile00.png"
+    "src": "src/lib/assets/images/profile00.png"
   },
-  "src/lib/assets/egh-large.png": {
+  "src/lib/assets/images/wraithwatch-logo.png": {
+    "file": "_app/immutable/assets/wraithwatch-logo-f28c1daa.png",
+    "src": "src/lib/assets/images/wraithwatch-logo.png"
+  },
+  "src/lib/assets/images/caldera-logo.png": {
+    "file": "_app/immutable/assets/caldera-logo-ae81c5fa.png",
+    "src": "src/lib/assets/images/caldera-logo.png"
+  },
+  "src/lib/assets/images/mitre-attack-logo.png": {
+    "file": "_app/immutable/assets/mitre-attack-logo-3ae6a7bf.png",
+    "src": "src/lib/assets/images/mitre-attack-logo.png"
+  },
+  "src/lib/assets/images/ndbc-api-readme.png": {
+    "file": "_app/immutable/assets/ndbc-api-readme-25d2db54.png",
+    "src": "src/lib/assets/images/ndbc-api-readme.png"
+  },
+  "src/lib/assets/posts/trident-project.png": {
+    "file": "_app/immutable/assets/trident-project-d702f361.png",
+    "src": "src/lib/assets/posts/trident-project.png"
+  },
+  "src/lib/assets/images/trident-project-03.jpg": {
+    "file": "_app/immutable/assets/trident-project-03-c59deb72.jpg",
+    "src": "src/lib/assets/images/trident-project-03.jpg"
+  },
+  "src/lib/assets/images/egh-large.png": {
     "file": "_app/immutable/assets/egh-large-e1af62da.png",
-    "src": "src/lib/assets/egh-large.png"
+    "src": "src/lib/assets/images/egh-large.png"
   },
-  "src/lib/assets/Jellen_Resume.pdf": {
-    "file": "_app/immutable/assets/Jellen_Resume-13c2466b.pdf",
-    "src": "src/lib/assets/Jellen_Resume.pdf"
-  },
-  "src/lib/assets/capstone-project-01.png": {
+  "src/lib/assets/images/capstone-project-01.png": {
     "file": "_app/immutable/assets/capstone-project-01-1b0250ec.png",
-    "src": "src/lib/assets/capstone-project-01.png"
+    "src": "src/lib/assets/images/capstone-project-01.png"
+  },
+  "src/lib/assets/files/Jellen_Resume.pdf": {
+    "file": "_app/immutable/assets/Jellen_Resume-13c2466b.pdf",
+    "src": "src/lib/assets/files/Jellen_Resume.pdf"
   },
   "src/lib/assets/background01.jpg": {
     "file": "_app/immutable/assets/background01-79e8f51b.jpg",
     "src": "src/lib/assets/background01.jpg"
   },
   "node_modules/@sveltejs/kit/src/runtime/client/start.js": {
-    "file": "_app/immutable/start-5c4ee5c1.js",
+    "file": "_app/immutable/start-2ad6547c.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/client/start.js",
     "isEntry": true,
     "imports": [
-      "_index-38e483ae.js",
-      "_singletons-73208bc3.js"
+      "_index-d02e4ee3.js",
+      "_singletons-53022857.js"
     ],
     "dynamicImports": [
       ".svelte-kit/generated/nodes/0.js",
       ".svelte-kit/generated/nodes/1.js",
-      ".svelte-kit/generated/nodes/2.js"
+      ".svelte-kit/generated/nodes/2.js",
+      ".svelte-kit/generated/nodes/3.js"
     ]
   },
   "src/routes/+layout.svelte": {
-    "file": "_app/immutable/components/pages/_layout.svelte-342e3fb4.js",
+    "file": "_app/immutable/components/pages/_layout.svelte-21483ed2.js",
     "src": "src/routes/+layout.svelte",
     "isEntry": true,
     "imports": [
-      "_index-38e483ae.js"
+      "_index-d02e4ee3.js"
     ],
     "css": [
       "_app/immutable/assets/_layout-2d3ed665.css"
     ]
   },
   "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
-    "file": "_app/immutable/components/error.svelte-8398176e.js",
+    "file": "_app/immutable/components/error.svelte-7eb69bb7.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/components/error.svelte",
     "isEntry": true,
     "imports": [
-      "_index-38e483ae.js",
-      "_singletons-73208bc3.js"
+      "_index-d02e4ee3.js",
+      "_singletons-53022857.js"
     ]
   },
   "src/routes/+page.svelte": {
-    "file": "_app/immutable/components/pages/_page.svelte-66eaa432.js",
+    "file": "_app/immutable/components/pages/_page.svelte-36ab8929.js",
     "src": "src/routes/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index-38e483ae.js"
+      "_index-d02e4ee3.js"
     ],
     "css": [
-      "_app/immutable/assets/_page-96ecbe43.css"
+      "_app/immutable/assets/_page-328b7c1e.css"
     ],
     "assets": [
       "_app/immutable/assets/logo-c9e87fa7.png",
@@ -106,7 +103,16 @@
       "_app/immutable/assets/egh-large-e1af62da.png",
       "_app/immutable/assets/trident-project-03-c59deb72.jpg",
       "_app/immutable/assets/capstone-project-01-1b0250ec.png",
+      "_app/immutable/assets/trident-project-d702f361.png",
       "_app/immutable/assets/Jellen_Resume-13c2466b.pdf"
+    ]
+  },
+  "src/routes/posts/trident-project-reflections/+page.svelte": {
+    "file": "_app/immutable/components/pages/posts/trident-project-reflections/_page.svelte-bb17085a.js",
+    "src": "src/routes/posts/trident-project-reflections/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-d02e4ee3.js"
     ]
   },
   "src/routes/+layout.ts": {
@@ -117,20 +123,20 @@
       "__layout-1daba58d.js"
     ]
   },
-  "_singletons-73208bc3.js": {
-    "file": "_app/immutable/chunks/singletons-73208bc3.js",
+  "_singletons-53022857.js": {
+    "file": "_app/immutable/chunks/singletons-53022857.js",
     "imports": [
-      "_index-38e483ae.js"
+      "_index-d02e4ee3.js"
     ]
   },
-  "_index-38e483ae.js": {
-    "file": "_app/immutable/chunks/index-38e483ae.js"
+  "_index-d02e4ee3.js": {
+    "file": "_app/immutable/chunks/index-d02e4ee3.js"
   },
   "__layout-1daba58d.js": {
     "file": "_app/immutable/chunks/_layout-1daba58d.js"
   },
   ".svelte-kit/generated/nodes/0.js": {
-    "file": "_app/immutable/chunks/0-7acd739d.js",
+    "file": "_app/immutable/chunks/0-4ee89da5.js",
     "src": ".svelte-kit/generated/nodes/0.js",
     "isDynamicEntry": true,
     "imports": [
@@ -139,7 +145,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/1.js": {
-    "file": "_app/immutable/chunks/1-1c92f3c3.js",
+    "file": "_app/immutable/chunks/1-5e3f6e8e.js",
     "src": ".svelte-kit/generated/nodes/1.js",
     "isDynamicEntry": true,
     "imports": [
@@ -147,11 +153,19 @@
     ]
   },
   ".svelte-kit/generated/nodes/2.js": {
-    "file": "_app/immutable/chunks/2-098a5a0e.js",
+    "file": "_app/immutable/chunks/2-75a7fdf2.js",
     "src": ".svelte-kit/generated/nodes/2.js",
     "isDynamicEntry": true,
     "imports": [
       "src/routes/+page.svelte"
+    ]
+  },
+  ".svelte-kit/generated/nodes/3.js": {
+    "file": "_app/immutable/chunks/3-0481e192.js",
+    "src": ".svelte-kit/generated/nodes/3.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/posts/trident-project-reflections/+page.svelte"
     ]
   },
   "src/routes/+layout.css": {
@@ -159,7 +173,7 @@
     "src": "src/routes/+layout.css"
   },
   "src/routes/+page.css": {
-    "file": "_app/immutable/assets/_page-96ecbe43.css",
+    "file": "_app/immutable/assets/_page-328b7c1e.css",
     "src": "src/routes/+page.css"
   }
 }
