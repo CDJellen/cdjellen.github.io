@@ -17,8 +17,9 @@
       description="Security Engineering | Machine Learning Engineering"
       descriptionLong="Wraithwatch is a cybersecurity startup building the next generation of AI/ML-informed cyber defense. As an early member of the team, I've had the opportunity to build the product, own infrastructure management, and develop customer relationships."
       notes={[
-        "Lead the design, development, and implementation of resilient infrastructure, decreasing product downtime by over 8 times.",
-        "Developed core backend services, allowing the product to scale from hundreds to millions of entities under analysis.",
+        "Driving product definition, technical architecture, and team leadership in a fast-paced environment;",
+        "Implementing agentic AI for security automation, assessment, and adversarial testing from real-time telemetry and static configurations;",
+        "Managing the product roadmap through synthesis of customer feedback, engineering design, and machine learning research.",
       ]}
     />
     <Experience
