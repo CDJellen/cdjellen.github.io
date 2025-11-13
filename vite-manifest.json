@@ -1,67 +1,63 @@
 {
-  "src/lib/assets/images/logo.png": {
+  "src/lib/assets/layered-waves-haikei.svg": {
+    "file": "_app/immutable/assets/layered-waves-haikei-b007de7b.svg",
+    "src": "src/lib/assets/layered-waves-haikei.svg"
+  },
+  "src/lib/assets/layered-waves-haikei-sm.svg": {
+    "file": "_app/immutable/assets/layered-waves-haikei-sm-dbfecfb0.svg",
+    "src": "src/lib/assets/layered-waves-haikei-sm.svg"
+  },
+  "src/lib/assets/logo.png": {
     "file": "_app/immutable/assets/logo-c9e87fa7.png",
-    "src": "src/lib/assets/images/logo.png"
+    "src": "src/lib/assets/logo.png"
   },
-  "src/lib/assets/images/profile00.png": {
-    "file": "_app/immutable/assets/profile00-f9884011.png",
-    "src": "src/lib/assets/images/profile00.png"
-  },
-  "src/lib/assets/images/button-background-aq.png": {
-    "file": "_app/immutable/assets/button-background-aq-fbc67d27.png",
-    "src": "src/lib/assets/images/button-background-aq.png"
-  },
-  "src/lib/assets/images/mitre-attack-logo.png": {
+  "src/lib/assets/mitre-attack-logo.png": {
     "file": "_app/immutable/assets/mitre-attack-logo-3ae6a7bf.png",
-    "src": "src/lib/assets/images/mitre-attack-logo.png"
+    "src": "src/lib/assets/mitre-attack-logo.png"
   },
-  "src/lib/assets/images/caldera-logo.png": {
+  "src/lib/assets/caldera-logo.png": {
     "file": "_app/immutable/assets/caldera-logo-ae81c5fa.png",
-    "src": "src/lib/assets/images/caldera-logo.png"
+    "src": "src/lib/assets/caldera-logo.png"
   },
-  "src/lib/assets/images/wraithwatch-logo.png": {
+  "src/lib/assets/wraithwatch-logo.png": {
     "file": "_app/immutable/assets/wraithwatch-logo-f28c1daa.png",
-    "src": "src/lib/assets/images/wraithwatch-logo.png"
+    "src": "src/lib/assets/wraithwatch-logo.png"
   },
-  "src/lib/assets/images/ndbc-api-readme.png": {
+  "src/lib/assets/profile00.png": {
+    "file": "_app/immutable/assets/profile00-f9884011.png",
+    "src": "src/lib/assets/profile00.png"
+  },
+  "src/lib/assets/ndbc-api-readme.png": {
     "file": "_app/immutable/assets/ndbc-api-readme-25d2db54.png",
-    "src": "src/lib/assets/images/ndbc-api-readme.png"
+    "src": "src/lib/assets/ndbc-api-readme.png"
   },
-  "src/lib/assets/images/trident-project-03.jpg": {
+  "src/lib/assets/trident-project-03.jpg": {
     "file": "_app/immutable/assets/trident-project-03-c59deb72.jpg",
-    "src": "src/lib/assets/images/trident-project-03.jpg"
+    "src": "src/lib/assets/trident-project-03.jpg"
   },
-  "src/lib/assets/images/button-background-ndbc-api.png": {
-    "file": "_app/immutable/assets/button-background-ndbc-api-2f6e10d2.png",
-    "src": "src/lib/assets/images/button-background-ndbc-api.png"
-  },
-  "src/lib/assets/images/button-background-explore-github.png": {
-    "file": "_app/immutable/assets/button-background-explore-github-8b0b2027.png",
-    "src": "src/lib/assets/images/button-background-explore-github.png"
-  },
-  "src/lib/assets/images/egh-large.png": {
+  "src/lib/assets/egh-large.png": {
     "file": "_app/immutable/assets/egh-large-e1af62da.png",
-    "src": "src/lib/assets/images/egh-large.png"
+    "src": "src/lib/assets/egh-large.png"
   },
-  "src/lib/assets/files/Jellen_Resume.pdf": {
-    "file": "_app/immutable/assets/Jellen_Resume-007d80b5.pdf",
-    "src": "src/lib/assets/files/Jellen_Resume.pdf"
+  "src/lib/assets/Jellen_Resume.pdf": {
+    "file": "_app/immutable/assets/Jellen_Resume-b84e102f.pdf",
+    "src": "src/lib/assets/Jellen_Resume.pdf"
   },
-  "src/lib/assets/images/capstone-project-01.png": {
+  "src/lib/assets/capstone-project-01.png": {
     "file": "_app/immutable/assets/capstone-project-01-1b0250ec.png",
-    "src": "src/lib/assets/images/capstone-project-01.png"
+    "src": "src/lib/assets/capstone-project-01.png"
   },
   "src/lib/assets/background01.jpg": {
     "file": "_app/immutable/assets/background01-79e8f51b.jpg",
     "src": "src/lib/assets/background01.jpg"
   },
   "node_modules/@sveltejs/kit/src/runtime/client/start.js": {
-    "file": "_app/immutable/start-6442ed56.js",
+    "file": "_app/immutable/start-d92e8048.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/client/start.js",
     "isEntry": true,
     "imports": [
       "_index-d02e4ee3.js",
-      "_singletons-564759c1.js"
+      "_singletons-f4fe7901.js"
     ],
     "dynamicImports": [
       ".svelte-kit/generated/nodes/0.js",
@@ -77,35 +73,32 @@
       "_index-d02e4ee3.js"
     ],
     "css": [
-      "_app/immutable/assets/_layout-48f07990.css"
+      "_app/immutable/assets/_layout-825577e8.css"
     ]
   },
   "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
-    "file": "_app/immutable/components/error.svelte-43943fd9.js",
+    "file": "_app/immutable/components/error.svelte-fdbd18aa.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/components/error.svelte",
     "isEntry": true,
     "imports": [
       "_index-d02e4ee3.js",
-      "_singletons-564759c1.js"
+      "_singletons-f4fe7901.js"
     ]
   },
   "src/routes/+page.svelte": {
-    "file": "_app/immutable/components/pages/_page.svelte-411fd25e.js",
+    "file": "_app/immutable/components/pages/_page.svelte-673b0aa3.js",
     "src": "src/routes/+page.svelte",
     "isEntry": true,
     "imports": [
       "_index-d02e4ee3.js"
     ],
     "css": [
-      "_app/immutable/assets/_page-0c29e7db.css"
+      "_app/immutable/assets/_page-96ecbe43.css"
     ],
     "assets": [
       "_app/immutable/assets/logo-c9e87fa7.png",
       "_app/immutable/assets/background01-79e8f51b.jpg",
       "_app/immutable/assets/profile00-f9884011.png",
-      "_app/immutable/assets/button-background-ndbc-api-2f6e10d2.png",
-      "_app/immutable/assets/button-background-aq-fbc67d27.png",
-      "_app/immutable/assets/button-background-explore-github-8b0b2027.png",
       "_app/immutable/assets/mitre-attack-logo-3ae6a7bf.png",
       "_app/immutable/assets/caldera-logo-ae81c5fa.png",
       "_app/immutable/assets/wraithwatch-logo-f28c1daa.png",
@@ -113,7 +106,7 @@
       "_app/immutable/assets/egh-large-e1af62da.png",
       "_app/immutable/assets/trident-project-03-c59deb72.jpg",
       "_app/immutable/assets/capstone-project-01-1b0250ec.png",
-      "_app/immutable/assets/Jellen_Resume-007d80b5.pdf"
+      "_app/immutable/assets/Jellen_Resume-b84e102f.pdf"
     ]
   },
   "src/routes/+layout.ts": {
@@ -124,8 +117,8 @@
       "__layout-1daba58d.js"
     ]
   },
-  "_singletons-564759c1.js": {
-    "file": "_app/immutable/chunks/singletons-564759c1.js",
+  "_singletons-f4fe7901.js": {
+    "file": "_app/immutable/chunks/singletons-f4fe7901.js",
     "imports": [
       "_index-d02e4ee3.js"
     ]
@@ -146,7 +139,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/1.js": {
-    "file": "_app/immutable/chunks/1-651bfdcc.js",
+    "file": "_app/immutable/chunks/1-ebf8dab2.js",
     "src": ".svelte-kit/generated/nodes/1.js",
     "isDynamicEntry": true,
     "imports": [
@@ -154,7 +147,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/2.js": {
-    "file": "_app/immutable/chunks/2-21c29489.js",
+    "file": "_app/immutable/chunks/2-37c95675.js",
     "src": ".svelte-kit/generated/nodes/2.js",
     "isDynamicEntry": true,
     "imports": [
@@ -162,11 +155,11 @@
     ]
   },
   "src/routes/+layout.css": {
-    "file": "_app/immutable/assets/_layout-48f07990.css",
+    "file": "_app/immutable/assets/_layout-825577e8.css",
     "src": "src/routes/+layout.css"
   },
   "src/routes/+page.css": {
-    "file": "_app/immutable/assets/_page-0c29e7db.css",
+    "file": "_app/immutable/assets/_page-96ecbe43.css",
     "src": "src/routes/+page.css"
   }
 }
