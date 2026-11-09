@@ -1,6 +1,31 @@
-<!-- Footer -->
+<script lang="ts">
+	import { SITE_METADATA } from '$lib/data/content';
+	import { ICONS } from '$lib/data/icons';
+</script>
+
 <footer class="bg-gray-800 text-gray-400 text-base">
-    <div class="flex justify-center items-center">
-        Made with <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/svelte/svelte-original.svg" alt="sveltekit" href="https://kit.svelte.dev/" style="width:24px;height:24px;" class="footer-icon"> <a href="https://kit.svelte.dev/">SvelteKit</a> &nbsp;by&nbsp; <a href="https://github.com/cdjellen/">Christopher Jellen</a>
-    </div>
+	<div class="flex justify-center items-center">
+		Made with
+		<a
+			href={SITE_METADATA.svelteKitUrl}
+			target="_blank"
+			rel="noopener noreferrer"
+			class="inline-flex items-center"
+		>
+			<img
+				src={ICONS.svelte.src}
+				alt=""
+				aria-hidden="true"
+				width="24"
+				height="24"
+				class="footer-icon"
+				loading="lazy"
+			/>
+			<span>SvelteKit</span>
+		</a>
+		&nbsp;by&nbsp;
+		<a href={SITE_METADATA.githubUrl} target="_blank" rel="noopener noreferrer">
+			{SITE_METADATA.name}
+		</a>
+	</div>
 </footer>

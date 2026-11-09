@@ -1,16 +1,25 @@
 <script lang="ts">
-	export let icon: string;
-	export let link: string;
-	export let text: string;
+	import type { ActionLink } from '$lib/data/types';
+
+	export let action: ActionLink;
 </script>
 
 <a
-	class="bg-slate-100 hover:bg-slate-200 text-gray-800 inline-flex py-2 px-4 border border-gray-400 rounded shadow"
-	href={link}
-	role="button"
+	class="bg-slate-100 hover:bg-slate-200 text-gray-800 inline-flex items-center py-2 px-4 border border-gray-400 rounded shadow"
+	href={action.href}
+	target="_blank"
+	rel="noopener noreferrer"
 >
-	{#if icon}
-		<img src={icon} class="h-8 px-1" alt="Logo" />
+	{#if action.icon}
+		<img
+			src={action.icon.src}
+			class="h-8 px-1"
+			alt=""
+			aria-hidden="true"
+			width="32"
+			height="32"
+			loading="lazy"
+		/>
 	{/if}
-	<h3 class="text-left text-gray-50 text-md font-bold text-button-sm" >{text}</h3>
+	<span class="text-left text-base font-bold text-button-sm">{action.label}</span>
 </a>

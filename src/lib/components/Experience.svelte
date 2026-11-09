@@ -1,54 +1,60 @@
 <script lang="ts">
-	export let image: string;
-	export let link: string;
-	export let name: string;
-	export let description: string;
-	export let descriptionLong: string;
-	export let notes: string[];
+	import type { ExperienceItem } from '$lib/data/types';
+
+	export let experience: ExperienceItem;
 </script>
 
-<div class="experience-container rounded-2xl">
+<article class="experience-container rounded-2xl">
 	<div class="image-container">
-		<a href={link} target="_blank">
-			<img src={image} alt="Experience" class="experience-image" />
+		<a href={experience.link} target="_blank" rel="noopener noreferrer">
+			<img
+				src={experience.image}
+				alt={experience.imageAlt}
+				class="experience-image"
+				loading="lazy"
+			/>
 		</a>
 	</div>
 
 	<div class="experience-details">
-		<h3 class="experience-title text-outline-sm">{name}</h3>
-		<h4 class="experience-description text-outline">{description}</h4>
-		<p class="experience-description-long">{descriptionLong}</p>
+		<h3 class="experience-title text-outline-sm">{experience.name}</h3>
+		<p class="experience-description text-outline">{experience.description}</p>
+		<p class="experience-description-long">{experience.descriptionLong}</p>
 
 		<div class="accomplishments">
 			<h4 class="accomplishments-title text-outline">Key Accomplishments:</h4>
 			<ul>
-				{#each notes as note}
-					<li class="accomplishment-item">&#128204; {note}</li>
+				{#each experience.notes as note (note)}
+					<li class="accomplishment-item">
+						<span aria-hidden="true">&#128204;</span>
+						{note}
+					</li>
 				{/each}
 			</ul>
 		</div>
 	</div>
-</div>
+</article>
 
 <style>
 	.experience-container {
-		background-color: #2f323f;
+		background-color: var(--surface-card, #2f323f);
 		color: white;
 		padding: 1.5rem;
 		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 		display: flex;
 		flex-direction: column;
 		gap: 1rem;
+		width: 100%;
 	}
 
 	.image-container {
-		width: 100%; 
+		width: 100%;
 		max-width: 200px;
 		margin: 0 auto 1rem auto;
 	}
 
 	.experience-image {
-		width: 100%; 
+		width: 100%;
 		height: auto;
 		object-fit: contain;
 		border-radius: 0.5rem;
@@ -85,10 +91,9 @@
 		margin-bottom: 0.5rem;
 	}
 
-	/* Media Query for Larger Screens */
 	@media (min-width: 768px) {
 		.experience-container {
-			flex-direction: row; 
+			flex-direction: row;
 		}
 
 		.image-container {

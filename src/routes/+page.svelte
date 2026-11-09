@@ -1,25 +1,25 @@
 <script lang="ts">
-  import Navbar from "$lib/Navbar.svelte";
-  import Banner from "$lib/Banner.svelte";
-  import Experiences from "$lib/Experiences.svelte";
-  import Projects from "$lib/Projects.svelte";
-  import Publications from "$lib/Publications.svelte";
-  import Resume from "$lib/Resume.svelte";
-  import Footer from "$lib/Footer.svelte";
-
-  import spacer from '$lib/assets/layered-waves-haikei.svg'
-  import spacerSm from '$lib/assets/layered-waves-haikei-sm.svg'
+	import Banner from '$lib/Banner.svelte';
+	import { SITE_METADATA } from '$lib/data/content';
+	import Experiences from '$lib/Experiences.svelte';
+	import Footer from '$lib/Footer.svelte';
+	import Navbar from '$lib/Navbar.svelte';
+	import Projects from '$lib/Projects.svelte';
+	import Publications from '$lib/Publications.svelte';
+	import Resume from '$lib/Resume.svelte';
 </script>
 
-<div id="navbar"></div>
+<svelte:head>
+	<title>{SITE_METADATA.pageTitle}</title>
+	<meta name="description" content={SITE_METADATA.description} />
+</svelte:head>
+
 <Navbar />
-<Banner />
-<div id="experiences"></div>
-<Experiences />
-<div id="projects"></div>
-<Projects />
-<div id="publications"></div>
-<Publications />
-<div id="resume"></div>
-<Resume />
+<main>
+	<Banner />
+	<Experiences />
+	<Projects />
+	<Publications />
+	<Resume />
+</main>
 <Footer />

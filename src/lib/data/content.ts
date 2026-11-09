@@ -1,0 +1,251 @@
+import CalderaLogo from '$lib/assets/caldera-logo.png';
+import CapstoneProj from '$lib/assets/capstone-project-01.png';
+import ExploreGithub from '$lib/assets/egh-large.png';
+import MicrosoftLogo from '$lib/assets/microsoft.png';
+import MitreLogo from '$lib/assets/mitre-attack-logo.png';
+import NdbcApi from '$lib/assets/ndbc-api-readme.png';
+import TridentProj from '$lib/assets/trident-project-03.jpg';
+import WraithWatchLogo from '$lib/assets/wraithwatch-logo.png';
+import { ICONS } from './icons';
+import type { ExperienceItem, ProjectItem, PublicationItem, SiteMetadata } from './types';
+
+export const SITE_METADATA: SiteMetadata = {
+	name: 'Christopher Jellen',
+	headline: 'Machine Learning Research | Automation Engineering',
+	pageTitle: 'Christopher Jellen | Machine Learning Research & Automation Engineering',
+	description:
+		'Personal portfolio and resume of Christopher Jellen — Machine Learning Research, Security Engineering, and Automation Engineering.',
+	githubUrl: 'https://github.com/cdjellen',
+	linkedinUrl: 'https://www.linkedin.com/in/cdjellen/',
+	svelteKitUrl: 'https://kit.svelte.dev/',
+	navItems: [
+		{ label: 'Experience', href: '#experiences' },
+		{ label: 'Projects', href: '#projects' },
+		{ label: 'Publications', href: '#publications' },
+		{ label: 'Resume', href: '#resume' }
+	],
+	socialLinks: [
+		{
+			label: 'GitHub',
+			href: 'https://github.com/cdjellen',
+			icon: ICONS.github
+		},
+		{
+			label: 'LinkedIn',
+			href: 'https://www.linkedin.com/in/cdjellen/',
+			icon: ICONS.linkedin
+		}
+	]
+};
+
+export const EXPERIENCES: readonly ExperienceItem[] = [
+	{
+		id: 'wraithwatch',
+		name: 'Wraithwatch',
+		description: 'Security Engineering | Machine Learning Engineering',
+		descriptionLong:
+			"Wraithwatch is a cybersecurity startup building the next generation of AI/ML-informed cyber defense. As an early member of the team, I've had the opportunity to build the product, own infrastructure management, and develop customer relationships.",
+		notes: [
+			'Driving product definition, technical architecture, and team leadership in a fast-paced environment.',
+			'Implementing agentic AI for security automation, assessment, and adversarial testing from real-time telemetry and static configurations.',
+			'Managing the product roadmap through synthesis of customer feedback, engineering design, and machine learning research.'
+		],
+		link: 'https://www.wraithwatch.com/',
+		image: WraithWatchLogo,
+		imageAlt: 'Wraithwatch Logo'
+	},
+	{
+		id: 'microsoft',
+		name: 'Microsoft',
+		description: 'Software Engineering | Engineering Operations',
+		descriptionLong:
+			'As a member of the developer platform team, I designed, built and accelerated shared release and observability tooling for the Microsoft Defender ecosystem.',
+		notes: [
+			'Scaled and optimized k8s cluster topology and configuration to increase microservice reliability.',
+			'Decreased time-to-release across dedicated cloud environments by a factor of four through automated configuration and service validation.',
+			'Led development and evaluation of medium- and long-term forecasting models for cloud storage and compute demand to aid in long-term strategic planning.',
+			'Developed automated monitoring and observability pipelines to capture and report cross-service health and availability.'
+		],
+		link: 'https://www.microsoft.com/en-us/microsoft-365/government/',
+		image: MicrosoftLogo,
+		imageAlt: 'Microsoft Logo'
+	},
+	{
+		id: 'mitre',
+		name: 'The MITRE Corporation',
+		description: 'Machine Learning Engineering | Data Science',
+		descriptionLong:
+			"Supported The Veteran's Benefits Administration, the United States Marine Corps, and Intelligence Community as an engineer and consultant, delivering deep technical analyses in support of intelligence automation.",
+		notes: [
+			'Developed prototype AI/ML-informed quality assurance tools for Public-sector Data Scientists which scale to hundreds of millions of transactions.',
+			'Doubled the frequency of cross-organization engagements through agile project management and customer-centric design.',
+			'Advised Public-sector institutions on the application of open-source AI/ML tools and models in signal processing and data analysis.'
+		],
+		link: 'https://www.mitre.org',
+		image: MitreLogo,
+		imageAlt: 'The MITRE Corporation Logo'
+	},
+	{
+		id: 'caldera',
+		name: 'CALDERA: Automated Adversary Emulation',
+		description: 'Engineering Manager',
+		descriptionLong:
+			'CALDERA is an open-source framework for automated adversary emulation. It offers a powerful combination of atomic abilities, automated attack planning, and stealth-focused C2 capabilities to make cyber risk analysis accessible. CALDERA is used both by the open source community and a range of Government, DoD, IC, and university sponsors. Building experience as a leader helped me to understand the importance of effective management in successful product development. In planning the future of CALDERA, I learned effective product management in the context of competing customer interests and priorities.',
+		notes: [
+			"Product lead for CALDERA's cyber ontological mapping capability, interfaced with a range of DoD sponsors to ensure wide interoperability and wider use of CALDERA as a cyber analytic tool.",
+			'Led a team of four (3 engineers, 1 data scientist) to develop novel offensive cyber planning capabilities and data management solutions, resulting in a software patent and new opportunities for Government partnership.',
+			'Built closed-source AI-ML enabled cyber posture analysis capabilities deployed on AWS.'
+		],
+		link: 'https://caldera.mitre.org',
+		image: CalderaLogo,
+		imageAlt: 'MITRE CALDERA Logo'
+	}
+];
+
+export const PROJECTS: readonly ProjectItem[] = [
+	{
+		id: 'explore-github',
+		name: 'Explore GitHub | Graph-based search of GitHub projects and contributors',
+		description:
+			"A containerized application for traversing GitHub's implicit graph of contributors and repositories. Built using gRPC, redis cache, and GraphQL to make GitHub more accessible, engaging, and social.",
+		image: ExploreGithub,
+		imageAlt: 'Explore GitHub graph visualization screenshot',
+		primaryHref: 'https://github.com/cdjellen/discover',
+		badges: [ICONS.go, ICONS.svelte, ICONS.docker],
+		links: [
+			{
+				label: 'Explore GitHub',
+				href: 'https://explore-github.com',
+				icon: ICONS.google
+			},
+			{
+				label: 'GitHub Repository',
+				href: 'https://github.com/cdjellen/discover',
+				icon: ICONS.github
+			}
+		]
+	},
+	{
+		id: 'ndbc-api',
+		name: 'National Data Buoy Center API',
+		description:
+			'A Python API for querying oceanographic and atmospheric data from the National Data Buoy Center. The ndbc-api makes climate research data more accessible by parsing whitespace-delimited data files. Measurements are typically distributed as utf-8 encoded, station-by-station, fixed-period text files. More information on the measurements and methodology are available on the NDBC website.',
+		image: NdbcApi,
+		imageAlt: 'National Data Buoy Center API documentation preview',
+		primaryHref: 'https://github.com/cdjellen/ndbc-api',
+		badges: [ICONS.git, ICONS.python, ICONS.pytest, ICONS.numpy],
+		links: [
+			{
+				label: 'PyPi Link',
+				href: 'https://pypi.org/project/ndbc-api/',
+				icon: ICONS.pythonPlain
+			},
+			{
+				label: 'GitHub Repository',
+				href: 'https://github.com/cdjellen/ndbc-api',
+				icon: ICONS.github
+			}
+		]
+	},
+	{
+		id: 'trident-research',
+		name: 'USNA Trident Research Project',
+		description:
+			'Developed a machine-learning model for prediction of optical turbulence in near-maritime environments.',
+		image: TridentProj,
+		imageAlt: 'USNA Trident Research field instrumentation along the Severn River',
+		primaryHref: 'https://discover.dtic.mil/',
+		badges: [ICONS.pytorch, ICONS.python, ICONS.pandas, ICONS.matlab],
+		links: [
+			{
+				label: 'Conference Presentation',
+				href: 'https://www.usna.edu/TridentProgram/VirtualConference/Jellen.php'
+			},
+			{
+				label: 'DTIC Archive',
+				href: 'https://discover.dtic.mil/'
+			}
+		]
+	},
+	{
+		id: 'capstone-design',
+		name: 'Capstone Design Competition',
+		description:
+			'Led a team to design, integrate, and build a semi-autonomous corrosion detection robot for a national design competition. The team was funded by the Office of Naval Research (ONR), and provided an excellent opportunity to plan and execute a long-term, product-focused development project. Placed first in the 2019 University Students Applied Design and Solutions Competition, sponsored by the National Association of Corrosion Engineers (NACE).',
+		image: CapstoneProj,
+		imageAlt: 'Semi-autonomous corrosion detection robot at USNA Capstone Day',
+		primaryHref: 'http://www.usdasc.com/the-challenge',
+		badges: [ICONS.matlab, ICONS.r, ICONS.arduino],
+		links: [
+			{
+				label: 'Capstone Day',
+				href: 'https://www.usna.edu/AeroDept/_files/documents/2019_Capstone_Day_Program_v6.pdf'
+			},
+			{
+				label: 'Competition Summary',
+				href: 'http://www.usdasc.com/the-challenge'
+			}
+		]
+	}
+];
+
+export const PUBLICATIONS: readonly PublicationItem[] = [
+	{
+		id: 'otbench-2024',
+		title: 'Effective Benchmarks for Optical Turbulence Modeling.',
+		notes: 'arXiv:2401.03573 (2024)',
+		abstract:
+			'Optical turbulence presents a significant challenge for communication, directed energy, and imaging systems, especially in the atmospheric boundary layer. Effective modeling of optical turbulence strength is critical for the development and deployment of these systems. The lack of standard evaluation tools, especially long-term data sets, modeling tasks, metrics, and baseline models, prevent effective comparisons between approaches and models. This reduces the ease of reproducing results and contributes to over-fitting on local micro-climates. Performance characterized using evaluation metrics provides some insight into the applicability of a model for predicting the strength of optical turbulence. However, these metrics are not sufficient for understanding the relative quality of a model. We introduce the otbench package, a Python package for rigorous development and evaluation of optical turbulence strength prediction models. The package provides a consistent interface for evaluating optical turbulence models on a variety of benchmark tasks and data sets. The otbench package includes a range of baseline models, including statistical, data-driven, and deep learning models, to provide a sense of relative model quality. otbench also provides support for adding new data sets, tasks, and evaluation metrics. The package is available at github.com/cdjellen/otbench.',
+		link: {
+			label: 'Pre-print available on ArXiv.',
+			href: 'https://arxiv.org/abs/2401.03573'
+		}
+	},
+	{
+		id: 'hybrid-models-2023',
+		title: 'Hybrid models for Optical Turbulence.',
+		notes: 'Appl. Opt. 62 (18), 4880-4890 (2023)',
+		abstract:
+			"Accurate prediction of atmospheric optical turbulence in localized environments is essential for estimating the performance of free-space optical systems. Macro-meteorological models developed to predict turbulent effects in one environment may fail when applied in new environments. However, existing macro-meteorological models are expected to offer some predictive power. Building a new model from locally-measured macro-meteorology and scintillometer readings can require significant time and resources, as well as a large number of observations. These challenges motivate the development of a machine-learning informed hybrid model framework. By combining some baseline macro-meteorological model with local observations, hybrid models were trained to improve upon the predictive power of each baseline model. Comparisons between the performance of the hybrid models, the selected baseline macro-meteorological models, and machine-learning models trained only on local observations highlight potential use cases for the hybrid model framework when local data is expensive to collect. Both the hybrid and data-only models were trained using the Gradient Boosted Decision Tree (GBDT) architecture with a variable number of in-situ meteorological observations. The hybrid and data-only models were found to outperform three baseline macro-meteorological models, even for low numbers of observations, in some cases as little as one day. For the first baseline macro-meteorological model investigated, the hybrid model achieves an estimated 29% reduction in mean absolute error (MAE) using only one days-equivalent of observation, growing to 41% after only two days, and 68% after 180 days-equivalent training data. The data-only model generally showed similar but slightly lower performance as compared to the hybrid model. Notably, the hybrid model's performance advantage over the data-only model dropped below 2% near the 24 days-equivalent observation mark and trended towards 0% thereafter. The number of days-equivalent training data required by both the hybrid model and the data-only model is potentially indicative of the seasonal variation in the local microclimate and its propagation environment.",
+		link: {
+			label: 'Published as a preprint in arXiv:2310.17829 and in Applied Optics.',
+			href: 'https://doi.org/10.1364/AO.487280'
+		}
+	},
+	{
+		id: 'macro-meteorological-2021',
+		title:
+			'Machine-learning informed macro-meteorological models for the near-maritime environment.',
+		notes: 'Appl. Opt. 60, 2938-2951 (2021)',
+		abstract:
+			'Macro-meteorological models predict optical turbulence as a function of weather data. Existing models often struggle to accurately predict the rapid fluctuations in Cn2 in near-maritime environments. Seven months of Cn2 field measurements were collected along an 890 m scintillometer link over the Severn River in Annapolis, Maryland. This time series was augmented with local meteorological measurements to capture bulk-atmospheric weather measurements. The prediction accuracy of existing macro-meteorological models was analyzed in a range of conditions. Next, machine-learning techniques were applied to train new macro-meteorological models using the measured Cn2 and measured environmental parameters. Finally, the Cn2 predictions generated by the existing macro-meteorological models and new machine-learning informed models were compared for four representative days from the data set. These new models, under most conditions, demonstrated a higher overall Cn2 prediction accuracy, and were better able to track optical turbulence. Further tuning and machine-learning architectural changes could further improve model performance.',
+		link: {
+			label: 'Published in Applied Optics.',
+			href: 'https://doi.org/10.1364/AO.416680'
+		}
+	},
+	{
+		id: 'predictor-importance-2020',
+		title:
+			'Machine learning informed predictor importance measures of environmental parameters in maritime optical turbulence.',
+		notes: 'Appl. Opt. 59, 6379-6389 (2020)',
+		abstract:
+			'Prediction of the index of refraction structure constant Cn2 in the low-altitude maritime environment is challenging. To improve predictive models, deeper understanding of the relationships between environmental parameters and optical turbulence is required. To that end, a robust data set of Cn2 as well as numerous meteorological parameters were collected over a period of approximately 15 months along the Chesapeake Bay adjacent to the Severn River in Annapolis, Maryland. The goal was to derive new insights into the physical relationships affecting optical turbulence in the near-maritime environment. Using data-driven machine learning feature selection approaches, the relative importance of 12 distinct, measurable environmental parameters was analyzed and evaluated. Random forest nodal purity analysis was the primary machine learning approach to relative importance determination. The relative feature importance results indicated that air temperature and pressure were important parameters in predicting Cn2 in the maritime environment. In addition, the relative importance findings suggest that the air-water temperature difference, temporal hour weight, and time of year, as measured through seasonality, have strong associations with Cn2 and could be included to improve model prediction accuracy.',
+		link: {
+			label: 'Published in Applied Optics.',
+			href: 'https://doi.org/10.1364/AO.397325'
+		}
+	},
+	{
+		id: 'scinotes-2020',
+		title:
+			'Measurement and analysis of atmospheric optical turbulence in a near-maritime environment.',
+		notes: 'IOP SciNotes 1 (2020) 024006',
+		abstract:
+			'The index of refraction structure constant, Cn2 characterizing the intensity of optical turbulence, describes the disruption of a propagating electromagnetic beam passing through an inhomogeneously heated turbulent environment. In order to improve predictive models, it is critical to develop a deeper understanding of the relationships between environmental parameters and optical turbulence. To that end, an over water, 890 m scintillometer link was established along the Chesapeake Bay adjacent to the Severn River in Annapolis, Maryland. Specifically, Cn2 data from the scintillometer, as well, as numerous meteorological parameters were collected over the period of approximately 15 months to characterize a scintillometer link in the near-maritime environment. The characteristics of this near-maritime link were distinct from those observed in prior over-land and open ocean links. Further, existing macro-meteorological models for predicting Cn2 from environmental parameters developed for open-ocean links were shown to perform poorly in the near-maritime environment. While the offshore adapted macro-meteorological model demonstrated lower prediction error, this study suggests that new models could be developed to reduce Cn2 prediction error in the near-maritime environment. The complete data set, including Cn2 measurements, and to our knowledge, one of the first to extend beyond one year, is available.',
+		link: {
+			label: 'Published in IOP SciNotes.',
+			href: 'https://doi.org/10.1088/2633-1357/abba45'
+		}
+	}
+];
